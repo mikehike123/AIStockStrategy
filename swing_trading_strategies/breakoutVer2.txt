@@ -1,0 +1,116 @@
+//@version=5
+strategy("Breakout Strategy w/ Controlled Pyramiding", 
+     overlay=true, 
+     default_qty_type=strategy.percent_of_equity, 
+     default_qty_value=20)
+
+// --- INPUTS ---
+// Date Range
+string date_range_group = "Date Range"
+start_date = input.time(timestamp("2023-01-01T00:00"), title="Start Date", group=date_range_group)
+end_date = input.time(timestamp("2025-01-01T00:00"), title="End Date", group=date_range_group)
+
+// Strategy Parameters
+string params_group = "Strategy Parameters"
+int breakout_period = input.int(20, title="Breakout Period", group=params_group)
+bool enableShorts = input.bool(false, title="Enable Short Selling?", group=params_group)
+bool enablePyramiding = input.bool(true, title="Enable Pyramiding?", group=params_group)
+int pyramidCount = input.int(5, title="Max Pyramid Entries", minval=1, group=params_group)
+float pyramidProfitPerc = input.float(20.0, title="Min Profit % to Pyramid", minval=0.0, step=1.0, group=params_group) / 100
+
+
+
+// Profit & Loss
+string pnl_group = "Profit & Loss"
+float tp_long_perc = input.float(10000.0, title="Long Take Profit %", group=pnl_group) / 100
+float sl_long_perc = input.float(100.0, title="Long Stop Loss %", group=pnl_group) / 100
+float tp_short_perc = input.float(10.0, title="Short Take Profit %", group=pnl_group) / 100
+float sl_short_perc = input.float(5.0, title="Short Stop Loss %", group=pnl_group) / 100
+
+// Trailing Stop Loss
+bool useTrailingStop = input.bool(true, title="Use Trailing Stop Loss?", group=pnl_group)
+float trailingStopPercent = input.float(50.0, title="Trailing Stop %", group=pnl_group) / 100
+
+
+// --- DATE FILTER ---
+bool inDateRange = time >= start_date and time < end_date
+
+
+// --- STRATEGY LOGIC ---
+float highest_high = ta.highest(high, breakout_period)[1]
+float lowest_low = ta.lowest(low, breakout_period)[1]
+
+var float longStopPrice = na
+var float shortStopPrice = na
+
+
+// --- POSITION MANAGEMENT ---
+// Determine entry signals
+bool longCondition = inDateRange and (close > highest_high)
+bool shortCondition = inDateRange and enableShorts and (close < lowest_low)
+
+// Check if the current position is profitable enough to add to
+var float profit_perc = 0.0
+bool isProfitableToPyramid = false
+
+if (strategy.position_size > 0)
+    profit_perc := (close - strategy.position_avg_price) / strategy.position_avg_price
+    isProfitableToPyramid := profit_perc >= pyramidProfitPerc
+
+if (strategy.position_size < 0)
+    profit_perc := (strategy.position_avg_price - close) / strategy.position_avg_price
+    isProfitableToPyramid := profit_perc >= pyramidProfitPerc
+
+// Determine if a long entry is allowed
+bool allowLongEntry = longCondition and (strategy.position_size == 0 or (enablePyramiding and isProfitableToPyramid))
+
+// Determine if a short entry is allowed
+bool allowShortEntry = shortCondition and (strategy.position_size == 0 or (enablePyramiding and isProfitableToPyramid))
+
+
+// Enter a trade if conditions are met
+if (allowLongEntry)
+    strategy.entry("Long", strategy.long)
+
+if (allowShortEntry)
+    strategy.entry("Short", strategy.short)
+
+
+// --- EXIT LOGIC ---
+if (strategy.position_size > 0)
+    // On any new entry (initial or pyramid), update the stop loss
+    if (strategy.position_size > strategy.position_size[1]) 
+        // A fixed SL would be reset based on the new average price. A trailing SL continues from its last highest point.
+        longStopPrice := useTrailingStop ? math.max(longStopPrice, high * (1 - trailingStopPercent)) : strategy.position_avg_price * (1 - sl_long_perc)
+    
+    // Update trailing stop on every bar
+    if useTrailingStop
+        newLongStop = high * (1 - trailingStopPercent)
+        longStopPrice := math.max(longStopPrice, newLongStop)
+
+    longTakeProfit = strategy.position_avg_price * (1 + tp_long_perc)
+    strategy.exit("Long Exit", from_entry="Long", limit=longTakeProfit, stop=longStopPrice)
+
+if (strategy.position_size < 0)
+    // On any new entry (initial or pyramid), update the stop loss
+    if (strategy.position_size < strategy.position_size[1])
+        shortStopPrice := useTrailingStop ? math.min(shortStopPrice, low * (1 + trailingStopPercent)) : strategy.position_avg_price * (1 + sl_short_perc)
+
+    // Update trailing stop on every bar
+    if useTrailingStop
+        newShortStop = low * (1 + trailingStopPercent)
+        shortStopPrice := math.min(shortStopPrice, newShortStop)
+
+    shortTakeProfit = strategy.position_avg_price * (1 - tp_short_perc)
+    strategy.exit("Short Exit", from_entry="Short", limit=shortTakeProfit, stop=shortStopPrice)
+
+// Force exit at the end of the date range
+if (time >= end_date and strategy.position_size != 0)
+    strategy.close_all(comment = "End of Date Range Exit")
+
+
+// --- PLOTTING ---
+plot(highest_high, "Breakout High", color=color.new(color.green, 0), style=plot.style_linebr)
+plot(lowest_low, "Breakout Low", color=color.new(color.red, 0), style=plot.style_linebr)
+plot(strategy.position_size > 0 ? longStopPrice : na, "Long SL", color=color.new(color.orange, 0), style=plot.style_cross, linewidth = 2)
+plot(strategy.position_size < 0 ? shortStopPrice : na, "Short SL", color=color.new(color.orange, 0), style=plot.style_cross, linewidth = 2)

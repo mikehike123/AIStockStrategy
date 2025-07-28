@@ -1,0 +1,12 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "Re-run backtests and regenerate report",
+			"command": "python swing_trading_strategies/main.py",
+			"group": "build",
+			"isBackground": false
+		}
+	]
+}
