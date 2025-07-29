@@ -144,7 +144,7 @@ def run_portfolio_analysis(initial_capital=100000):
     else:
         results_df = results_df.sort_values(by='Portfolio Return [%]', ascending=False)
 
-    report_content = results_df.to_markdown()
+    report_content = results_df.to_markdown(floatfmt=('.1f'))
 
     # Print to console
     print(report_content)

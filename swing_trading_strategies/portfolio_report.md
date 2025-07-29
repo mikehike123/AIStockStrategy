@@ -14,14 +14,14 @@ This report shows the performance of each strategy when applied across the entir
 
 |                                            |   Final Portfolio Value [$] |   Portfolio Return [%] |   Max Drawdown [%] |
 |:-------------------------------------------|----------------------------:|-----------------------:|-------------------:|
-| Buy and Hold                               |                 2.76411e+07 |              27541.1   |          -59.0434  |
-| TwoStdDev_MonthlyTrend_LowerBand_Trailing  |                 2.77262e+07 |              27626.2   |          -57.9807  |
-| TwoStdDev_YearlyTrend_LowerBand_Trailing   |                 2.38379e+07 |              23737.9   |          -56.3716  |
-| TwoStdDev_UpperBand_Trailing               |                 2.11894e+07 |              21089.4   |          -54.7357  |
-| Breakout_Simple                            |                 2.02252e+07 |              20125.2   |          -56.1048  |
-| BreakoutV2_As_Simple                       |                 2.02252e+07 |              20125.2   |          -56.1048  |
-| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End |                 1.21482e+07 |              12048.2   |          -46.1387  |
-| BreakoutV2_20_Trailingstop                 |                 8.99703e+06 |               8897.03  |          -27.9513  |
-| BreakoutV2_Full_Features                   |            859670           |                759.67  |          -13.8805  |
-| BreakoutV2_TrailingStop                    |            737510           |                637.51  |          -23.0354  |
-| TwoStdDev_SMA_Trailing_Pyramid             |            248408           |                148.408 |           -7.39455 |
+| Buy and Hold                               |                  27641076.1 |                27541.1 |              -59.0 |
+| TwoStdDev_MonthlyTrend_LowerBand_Trailing  |                  27726163.1 |                27626.2 |              -58.0 |
+| TwoStdDev_YearlyTrend_LowerBand_Trailing   |                  23837930.3 |                23737.9 |              -56.4 |
+| TwoStdDev_UpperBand_Trailing               |                  21189411.0 |                21089.4 |              -54.7 |
+| Breakout_Simple                            |                  20225202.1 |                20125.2 |              -56.1 |
+| BreakoutV2_As_Simple                       |                  20225202.1 |                20125.2 |              -56.1 |
+| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End |                  12148221.8 |                12048.2 |              -46.1 |
+| BreakoutV2_20_Trailingstop                 |                   8997026.9 |                 8897.0 |              -28.0 |
+| BreakoutV2_Full_Features                   |                    859670.2 |                  759.7 |              -13.9 |
+| BreakoutV2_TrailingStop                    |                    737510.3 |                  637.5 |              -23.0 |
+| TwoStdDev_SMA_Trailing_Pyramid             |                    248407.9 |                  148.4 |               -7.4 |
