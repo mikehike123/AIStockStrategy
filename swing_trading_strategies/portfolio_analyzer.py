@@ -144,7 +144,11 @@ def run_portfolio_analysis(initial_capital=100000):
     else:
         results_df = results_df.sort_values(by='Portfolio Return [%]', ascending=False)
 
-    report_content = results_df.to_markdown(floatfmt=('.1f'))
+    results_df['Final Portfolio Value [$]'] = results_df['Final Portfolio Value [$]'].apply(lambda x: f"{x:,.1f}")
+    results_df['Portfolio Return [%]'] = results_df['Portfolio Return [%]'].apply(lambda x: f"{x:,.1f}")
+    results_df['Max Drawdown [%]'] = results_df['Max Drawdown [%]'].apply(lambda x: f"{x:,.1f}")
+
+    report_content = results_df.to_markdown()
 
     # Print to console
     print(report_content)
