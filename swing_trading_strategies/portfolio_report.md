@@ -4,7 +4,11 @@
 
 **Data Span:** 2000-01-03 to 2024-12-30
 
-**Portfolio Stocks:** AAPL, ADBE, AMZN, GOOGL, META, MSFT, NFLX, NVDA, PYPL, QQQ, TSLA
+**Initial Capital:** $100,000.00
+
+**Portfolio Stocks (11 total):** AAPL, ADBE, AMZN, GOOGL, META, MSFT, NFLX, NVDA, PYPL, QQQ, TSLA
+
+*Capital was distributed equally among all stocks at the beginning of the analysis period.*
 
 This report shows the performance of each strategy when applied across the entire portfolio of stocks.
 
