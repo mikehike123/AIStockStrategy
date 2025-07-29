@@ -151,6 +151,9 @@ It's important to understand how `backtesting.py` handles open positions at the 
 ### 4. Next Steps
 - After core is working, add more strategies and metrics.
 - Refine for speed, flexibility, and multi-asset support if needed.
-
----
-*See code and test harness in the next section for implementation.*
+#### Implement the 2 Standard Deviation Strategy based on the logic in the "2 Standard Deviation Strategy.txt" pinescript file.
+- This will use similar risk management as breakoutVer2; specfically profit target, trailing or fix stop loss.  
+- It should also like breakoutVer2 allow pyramiding.
+- It will be designed to only take long trades.
+- It will be configurable to buy at the lower band, the sma, or upper band in the same way as the pinescript version can.
+- When creating the object User should be able to configure these above features.  

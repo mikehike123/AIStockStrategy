@@ -1,0 +1,109 @@
+//@version=5
+strategy("2 Standard Deviation Buy Strategy (TP/SL/Trailing)", 
+         overlay=true, 
+         initial_capital=100000, 
+         pyramiding=50, 
+         default_qty_value=20, 
+         default_qty_type=strategy.percent_of_equity)
+  
+// --- INPUTS ---
+// 7/28/2025
+// New Input Toggle for Buy Condition
+buy_condition_option = input.string("Lower Band - Cross Above", title="Buy Condition",
+                                     options=["Lower Band - Cross Above", "Upper Band - Cross Above", "SMA - Cross Above"], 
+                                     group="Strategy Logic")
+
+// NEW: Input to toggle the profitability check for pyramiding
+pyramid_when_profitable = input.bool(true, title="Pyramid Only When Profitable?", group="Strategy Logic")
+
+// Date Range Inputs
+start_date = input.time(title="Start Date", defval=timestamp("2000-1-1"), group="Date Range")
+close_date = input.time(title="Close Date", defval=timestamp("2025-05-1"), group="Date Range")
+
+// Bollinger Bands Inputs
+length = input.int(20, title="BB Length", minval=1, group="Bollinger Bands")
+stdev_factor = input.float(2.0, title="StdDev Factor", minval=0.1, group="Bollinger Bands")
+
+// Risk Management Inputs
+tpPercent = input.float(2, minval=0.01, step=0.01, title="Take Profit (%)", group="Risk Management")
+slPercent = input.float(1, minval=0.01, step=0.01, title="Stop Loss (%)", group="Risk Management")
+useTrailingStop = input.bool(true, title="Use Trailing Stop?", group="Risk Management") // Defaulted to true to show effect
+trailingStopPercent = input.float(15, minval=0.1, step=0.1, title="Trailing Stop (%)", group="Risk Management")
+
+// --- CALCULATIONS ---
+
+// Calculate moving average and standard deviation for Bollinger Bands
+sma = ta.sma(close, length)
+stdev = ta.stdev(close, length)
+
+// Calculate upper and lower bands
+upper_band = sma + stdev_factor * stdev
+lower_band = sma - stdev_factor * stdev
+
+// --- STRATEGY LOGIC ---
+
+// Check if the current bar is within the specified date range
+bool isWithinDateRange = time >= start_date and time < close_date
+
+// Define the three possible buy conditions
+bool buyBelowSignal = ta.crossover(close, lower_band)
+bool buyAboveSignal = ta.crossover(close, upper_band)
+bool buyAtSMASignal = ta.crossover(close, sma) 
+
+// UPDATED: Condition to only add to a position if it's profitable
+bool canPyramid = not pyramid_when_profitable or (strategy.position_size == 0 or close > strategy.position_avg_price)
+
+// Entry Logic
+if (isWithinDateRange and canPyramid)
+    if (buy_condition_option == "Lower Band - Cross Above" and buyBelowSignal)
+        strategy.entry("Buy", strategy.long)
+    if (buy_condition_option == "Upper Band - Cross Above" and buyAboveSignal)
+        strategy.entry("Buy", strategy.long)
+    if (buy_condition_option == "SMA - Cross Above" and buyAtSMASignal)
+        strategy.entry("Buy", strategy.long)
+
+// --- EXIT LOGIC ---
+var float trail_level = na
+var float stopLossPrice = na
+
+if (strategy.position_size > 0)
+    float takeProfitPrice = strategy.position_avg_price * (1 + tpPercent / 100)
+
+    if (useTrailingStop)
+        // If it's a new trade, initialize the trail level using the trailing percentage
+        if (strategy.position_size[1] == 0)
+            trail_level := close * (1 - trailingStopPercent / 100)
+        
+        // Update the trailing stop level if price moves favorably
+        trail_level := math.max(trail_level, close * (1 - trailingStopPercent / 100))
+        strategy.exit("Trailing SL Exit", from_entry="Buy", stop=trail_level, limit=takeProfitPrice)
+        
+    else
+        // Original TP/SL logic is now completely separate
+        stopLossPrice := strategy.position_avg_price * (1 - slPercent / 100)
+        strategy.exit("TP/SL Exit", from_entry="Buy", stop=stopLossPrice, limit=takeProfitPrice)
+
+// Reset trail level on position close
+if strategy.position_size == 0
+    trail_level := na
+    stopLossPrice := na
+
+// Close all positions if the backtest end date is reached
+if (time >= close_date)
+    strategy.close_all(comment="End of Backtest Period")
+    
+// --- PLOTTING ---
+
+// Plot the Bollinger Bands on the chart
+plot(sma, "SMA", color=color.orange)
+plot(upper_band, "Upper Band", color=color.blue)
+plot(lower_band, "Lower Band", color=color.blue)
+
+// Determine which stop loss level to plot
+float stopLossLevelToPlot = if strategy.position_size > 0
+    useTrailingStop ? trail_level : stopLossPrice
+else
+    na
+
+// Plot the active stop loss level
+plot(stopLossLevelToPlot, "Stop Loss", color=color.new(color.orange, 0), style=plot.style_cross, linewidth=2)
