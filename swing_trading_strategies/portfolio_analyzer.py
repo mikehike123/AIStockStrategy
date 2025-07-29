@@ -43,6 +43,7 @@ def run_portfolio_analysis(initial_capital=100000):
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     data_dir = os.path.join(project_root, 'stockData')
     stock_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
+    stock_symbols = [f.split('_')[0] for f in stock_files]
     num_stocks = len(stock_files)
     capital_per_stock = initial_capital / num_stocks
 
@@ -154,8 +155,9 @@ def run_portfolio_analysis(initial_capital=100000):
 
     with open(report_path, 'w') as f:
         f.write("# Portfolio Analysis Report\n\n")
-        f.write(f"**Analysis Date:** {today_str}\n")
+        f.write(f"**Analysis Date:** {today_str}\n\n")
         f.write(f"**Data Span:** {analysis_start_date} to {analysis_end_date}\n\n")
+        f.write(f"**Portfolio Stocks:** {', '.join(stock_symbols)}\n\n")
         f.write("This report shows the performance of each strategy when applied across the entire portfolio of stocks.\n\n")
         f.write(report_content)
     print(f"\nReport saved to {report_path}")

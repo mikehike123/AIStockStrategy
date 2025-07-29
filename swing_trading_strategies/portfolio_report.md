@@ -1,7 +1,10 @@
 # Portfolio Analysis Report
 
 **Analysis Date:** 2025-07-29
+
 **Data Span:** 2000-01-03 to 2024-12-30
+
+**Portfolio Stocks:** AAPL, ADBE, AMZN, GOOGL, META, MSFT, NFLX, NVDA, PYPL, QQQ, TSLA
 
 This report shows the performance of each strategy when applied across the entire portfolio of stocks.
 
