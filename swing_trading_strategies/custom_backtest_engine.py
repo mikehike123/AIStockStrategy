@@ -148,7 +148,7 @@ class TwoStdDevStrategy(Strategy):
                  stdev_factor=2.0,
                  trailing_stop_perc=0.10, 
                  max_pyramids=5, 
-                 pyramid_when_profitable=True,
+                 pyramid_profit_perc=0.20, # <-- New parameter
                  entry_size_perc=0.2, 
                  tp_long_perc=1.10):
         
@@ -160,7 +160,7 @@ class TwoStdDevStrategy(Strategy):
         self.stdev_factor = stdev_factor
         self.trailing_stop_perc = trailing_stop_perc
         self.max_pyramids = max_pyramids
-        self.pyramid_when_profitable = pyramid_when_profitable
+        self.pyramid_profit_perc = pyramid_profit_perc # <-- Store new parameter
         self.entry_size_perc = entry_size_perc
         self.tp_long_perc = tp_long_perc
         
@@ -204,8 +204,6 @@ class TwoStdDevStrategy(Strategy):
             buy_signal = True
 
         if buy_signal:
-            can_pyramid = not self.pyramid_when_profitable or (position and price > position.entry_price)
-            
             if not position:
                 self.pyramid_count = 1
                 sl_tp_dict = {'tp': price * self.tp_long_perc}
@@ -216,9 +214,11 @@ class TwoStdDevStrategy(Strategy):
                     sl_tp_dict['sl'] = price * (1 - self.fixed_stop_perc)
                 return 'buy', sl_tp_dict, self.entry_size_perc
 
-            elif position and self.pyramid_count < self.max_pyramids and can_pyramid:
-                self.pyramid_count += 1
-                return 'pyramid', {'sl': self.long_stop_price}, self.entry_size_perc
+            elif position and self.pyramid_count < self.max_pyramids:
+                profit_perc = (price - position.entry_price) / position.entry_price
+                if profit_perc >= self.pyramid_profit_perc:
+                    self.pyramid_count += 1
+                    return 'pyramid', {'sl': self.long_stop_price}, self.entry_size_perc
 
         if position and self.use_trailing_stop:
             return 'hold', {'sl': self.long_stop_price}, None

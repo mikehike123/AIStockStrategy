@@ -50,12 +50,14 @@ def run_portfolio_analysis(initial_capital=100000):
 
     # Determine a common date index from all datasets first
     common_index = None
+    all_stock_data = {}
     for filename in stock_files:
         data = pd.read_csv(os.path.join(data_dir, filename), index_col='Date', parse_dates=True)
         data.index = pd.to_datetime(data.index, utc=True).tz_localize(None)
         start_date = pd.to_datetime('2000-01-01')
         end_date = pd.to_datetime('2024-12-31')
         data = data[(data.index >= start_date) & (data.index <= end_date)]
+        all_stock_data[filename] = data
         if common_index is None:
             common_index = data.index
         else:
@@ -64,18 +66,35 @@ def run_portfolio_analysis(initial_capital=100000):
     analysis_start_date = common_index.min().strftime('%Y-%m-%d')
     analysis_end_date = common_index.max().strftime('%Y-%m-%d')
 
+    # --- Buy and Hold Calculation ---
+    buy_and_hold_curves = []
+    for filename, data in all_stock_data.items():
+        initial_price = data['Close'].iloc[0]
+        shares = capital_per_stock / initial_price
+        equity_curve = shares * data['Close']
+        reindexed_curve = equity_curve.reindex(common_index, method='ffill').fillna(capital_per_stock)
+        buy_and_hold_curves.append(reindexed_curve)
+    
+    if buy_and_hold_curves:
+        portfolio_equity = pd.concat(buy_and_hold_curves, axis=1).sum(axis=1)
+        initial_portfolio_value = portfolio_equity.iloc[0]
+        final_portfolio_value = portfolio_equity.iloc[-1]
+        portfolio_return_pct = (final_portfolio_value - initial_portfolio_value) / initial_portfolio_value * 100
+        running_max = portfolio_equity.cummax()
+        drawdown = (portfolio_equity - running_max) / running_max
+        max_drawdown_pct = drawdown.min() * 100
+
+        portfolio_results['Buy and Hold'] = {
+            'Final Portfolio Value [$]': final_portfolio_value,
+            'Portfolio Return [%]': portfolio_return_pct,
+            'Max Drawdown [%]': max_drawdown_pct
+        }
+
     for strat_name, strat_class_lambda in STRATEGIES:
         print(f"Analyzing portfolio for strategy: {strat_name}...")
         all_equity_curves = []
 
-        for filename in stock_files:
-            ticker = filename.split('_')[0]
-            data = pd.read_csv(os.path.join(data_dir, filename), index_col='Date', parse_dates=True)
-            data.index = pd.to_datetime(data.index, utc=True).tz_localize(None)
-            start_date = pd.to_datetime('2000-01-01')
-            end_date = pd.to_datetime('2024-12-31')
-            data = data[(data.index >= start_date) & (data.index <= end_date)]
-
+        for filename, data in all_stock_data.items():
             strategy_instance = strat_class_lambda()
             engine = BacktestEngine(data, strategy_instance, initial_cash=capital_per_stock)
             _, equity_curve_raw = engine.run()
@@ -116,7 +135,14 @@ def run_portfolio_analysis(initial_capital=100000):
     # --- Generate and Save Report ---
     print("\n--- Portfolio Analysis Results ---")
     results_df = pd.DataFrame.from_dict(portfolio_results, orient='index')
-    results_df = results_df.sort_values(by='Portfolio Return [%]', ascending=False)
+    # Custom sort: Buy and Hold first, then by return
+    if 'Buy and Hold' in results_df.index:
+        buy_and_hold_row = results_df.loc[['Buy and Hold']]
+        other_strategies = results_df.drop('Buy and Hold').sort_values(by='Portfolio Return [%]', ascending=False)
+        results_df = pd.concat([buy_and_hold_row, other_strategies])
+    else:
+        results_df = results_df.sort_values(by='Portfolio Return [%]', ascending=False)
+
     report_content = results_df.to_markdown()
 
     # Print to console

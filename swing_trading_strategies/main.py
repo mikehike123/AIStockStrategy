@@ -101,7 +101,7 @@ STRATEGIES = [
         tp_long_perc=10000,
         length=20
     )),
-    ("TwoStdDev_YearlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+    ("TwoStdDev_UpperBand_Trailing", lambda: TwoStdDevStrategy(
         buy_condition_option='Upper Band - Cross Above',
         use_trailing_stop=True,
         trailing_stop_perc=1.0,
@@ -111,6 +111,24 @@ STRATEGIES = [
         length=260
     )),
 
+    ("TwoStdDev_SMA_Trailing_Pyramid", lambda: TwoStdDevStrategy(
+        buy_condition_option='SMA - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=0.10,
+        max_pyramids=5,
+        pyramid_profit_perc=0.10, # <-- Add to position if 10% in profit
+        entry_size_perc=0.20,
+        tp_long_perc=1.20 # 20% TP
+    )),
+    ("TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End", lambda: TwoStdDevStrategy(
+        buy_condition_option='SMA - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=0.50,
+        max_pyramids=5,
+        pyramid_profit_perc=0.20, # <-- Add to position if 10% in profit
+        entry_size_perc=0.20,
+        tp_long_perc=10000 
+    )),
    
 ]
 
