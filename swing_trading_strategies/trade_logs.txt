@@ -273,6 +273,30 @@ AAPL_BreakoutV2_20_Trailingstop TRADES:
 2022-10-28 04:00:00   153.695084 2023-01-03 05:00:00  123.632523  14109.531897 -4.241687e+05 -19.559872        67 Trailing Stop
 2023-01-23 05:00:00   159.130230 2024-12-30 05:00:00  251.923019  68266.880490  6.334674e+06  58.312484       707  forced_close
 
+AAPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2000-04-13 04:00:00     0.856257 2024-12-30 05:00:00  251.923019 116787.371617 2.932143e+07 29321.427287      9027 forced_close
+
+AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL     ReturnPct  duration          Tag
+2002-07-24 04:00:00     0.228712 2024-12-30 05:00:00  251.923019 437231.715427 1.100487e+08 110048.733932      8195 forced_close
+
+AAPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2000-02-03 05:00:00     0.777261 2024-12-30 05:00:00  251.923019 128656.889063 3.231163e+07 32311.631961      9097 forced_close
+
+AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2001-11-19 05:00:00     0.300936 2024-12-30 05:00:00  251.923019 332296.487362 8.361313e+07 83613.134435      8442 forced_close
+
+AAPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2000-02-03 05:00:00     0.777261 2024-12-30 05:00:00  251.923019 128656.889063 3.231163e+07 32311.631961      9097 forced_close
+
+AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2003-06-18 04:00:00     0.287695 2024-12-30 05:00:00  251.923019 347590.197324 8.746597e+07 87465.972027      7866 forced_close
+
 ADBE_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price        size           PnL   ReturnPct  duration          Tag
 2000-02-03 05:00:00    17.143482 2001-02-21 05:00:00   14.937431 5833.120645 -1.286816e+04  -12.868161       384    Stop Loss
@@ -596,6 +620,30 @@ ADBE_BreakoutV2_20_Trailingstop TRADES:
 2022-10-24 04:00:00   362.561333 2023-02-24 05:00:00  320.540009  808.754293 -33984.926229 -11.590128       123 Trailing Stop
 2023-03-20 04:00:00   426.476293 2024-03-15 04:00:00  492.459991  610.983980  40314.982491  15.471833       361 Trailing Stop
 2024-05-06 04:00:00   537.888337 2024-12-13 05:00:00  465.690002  327.608725 -23652.804461 -13.422551       221 Trailing Stop
+
+ADBE_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-02-01 05:00:00    13.869929 2024-12-30 05:00:00  445.799988 7209.842079 3.114148e+06 3114.147511      9099 forced_close
+
+ADBE_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2001-02-14 05:00:00    19.906221 2024-12-30 05:00:00  445.799988 5023.555101 2.139501e+06 2139.500803      8720 forced_close
+
+ADBE_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-02-03 05:00:00    17.143482 2024-12-30 05:00:00  445.799988 5833.120645 2.500405e+06 2500.405112      9097 forced_close
+
+ADBE_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2001-01-22 05:00:00      29.7817 2024-12-30 05:00:00  445.799988 3357.766667 1.396892e+06 1396.892339      8743 forced_close
+
+ADBE_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-02-03 05:00:00    17.143482 2024-12-30 05:00:00  445.799988 5833.120645 2.500405e+06 2500.405112      9097 forced_close
+
+ADBE_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2003-09-18 04:00:00    20.719955 2024-12-30 05:00:00  445.799988 4826.265205 2.051549e+06 2051.548969      7774 forced_close
 
 AMZN_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price          size           PnL    ReturnPct  duration          Tag
@@ -930,6 +978,30 @@ AMZN_BreakoutV2_20_Trailingstop TRADES:
 2023-01-13 05:00:00   105.106113 2023-03-10 05:00:00   90.730003  3221.013165  -46305.637649 -13.677710        56 Trailing Stop
 2023-03-31 04:00:00   118.234885 2024-12-30 05:00:00  221.300003  6970.984456  718465.336270  87.169805       640  forced_close
 
+AMZN_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2000-05-24 04:00:00     2.428125 2024-12-30 05:00:00  221.300003 41184.042802 9.014029e+06 9014.028798      8986 forced_close
+
+AMZN_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2004-08-10 04:00:00        1.855 2024-12-30 05:00:00  221.300003 53908.355241 1.182992e+07 11829.919179      7447 forced_close
+
+AMZN_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2000-02-01 05:00:00     3.371875 2024-12-30 05:00:00  221.300003 29657.089479 6.463114e+06 6463.113992      9099 forced_close
+
+AMZN_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2002-01-07 05:00:00        0.617 2024-12-30 05:00:00  221.300003 162074.558554 3.576710e+07 35767.100303      8393 forced_close
+
+AMZN_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2000-02-01 05:00:00     3.371875 2024-12-30 05:00:00  221.300003 29657.089479 6.463114e+06 6463.113992      9099 forced_close
+
+AMZN_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2002-05-14 04:00:00       0.9405 2024-12-30 05:00:00  221.300003 106326.419744 2.343004e+07 23430.037014      8266 forced_close
+
 GOOGL_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
 2004-09-17 04:00:00       2.9262 2024-12-30 05:00:00  191.020004 34174.012311 6.427920e+06 6427.919978      7409 forced_close
@@ -1116,6 +1188,30 @@ GOOGL_BreakoutV2_20_Trailingstop TRADES:
 2022-11-30 05:00:00   115.832638 2024-09-06 04:00:00  150.374268 14664.928084 506550.519961  29.820291       645 Trailing Stop
 2024-09-30 04:00:00   181.241904 2024-12-30 05:00:00  191.020004  7190.244809  70306.936876   5.395055        91  forced_close
 
+GOOGL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2005-01-26 05:00:00     4.713202 2024-12-30 05:00:00  191.020004 21216.996405 3.952871e+06 3952.870744      7278 forced_close
+
+GOOGL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2008-10-13 04:00:00     9.489666 2024-12-30 05:00:00  191.020004 10537.778691 1.912927e+06 1912.926531      5922 forced_close
+
+GOOGL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2004-11-11 05:00:00     4.558287 2024-12-30 05:00:00  191.020004 21938.067372 4.090610e+06 4090.609723      7354 forced_close
+
+GOOGL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2006-08-03 04:00:00     9.349445 2024-12-30 05:00:00  191.020004 10695.821659 1.943116e+06 1943.115899      6724 forced_close
+
+GOOGL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2004-11-11 05:00:00     4.558287 2024-12-30 05:00:00  191.020004 21938.067372 4.090610e+06 4090.609723      7354 forced_close
+
+GOOGL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL   ReturnPct  duration          Tag
+2005-10-24 04:00:00      8.68346 2024-12-30 05:00:00  191.020004 11516.146477 2.099814e+06 2099.814349      7007 forced_close
+
 META_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price        size           PnL   ReturnPct  duration          Tag
 2012-09-14 04:00:00    21.896801 2012-09-24 04:00:00   20.692478 4566.877144 -5.499994e+03   -5.499994        10    Stop Loss
@@ -1263,6 +1359,30 @@ META_BreakoutV2_20_Trailingstop TRADES:
 2022-03-24 04:00:00   218.540024 2022-04-21 04:00:00  187.187790  368.577401 -1.155572e+04 -14.346221        28 Trailing Stop
 2022-07-19 04:00:00   174.955429 2022-09-16 04:00:00  145.603775  447.186860 -1.312567e+04 -16.776647        59 Trailing Stop
 2022-12-01 05:00:00   137.200762 2024-12-30 05:00:00  590.714417 2891.250372  1.311222e+06 330.547476       760  forced_close
+
+META_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2012-07-18 04:00:00    28.973448 2024-12-30 05:00:00  590.714417 3451.435973 1.938813e+06 1938.812987      4548 forced_close
+
+META_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price       size           PnL  ReturnPct  duration          Tag
+2018-10-12 04:00:00   153.018829 2024-12-30 05:00:00  590.714417 653.514345 286040.344858 286.040345      2271 forced_close
+
+META_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2012-09-11 04:00:00    19.338858 2024-12-30 05:00:00  590.714417 5170.936247 2.954547e+06 2954.546588      4493 forced_close
+
+META_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2013-07-09 04:00:00    25.360476 2024-12-30 05:00:00  590.714417 3943.143725 2.229272e+06 2229.271845      4192 forced_close
+
+META_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2012-09-11 04:00:00    19.338858 2024-12-30 05:00:00  590.714417 5170.936247 2.954547e+06 2954.546588      4493 forced_close
+
+META_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2013-07-25 04:00:00    34.198822 2024-12-30 05:00:00  590.714417 2924.077325 1.627295e+06 1627.294631      4176 forced_close
 
 MSFT_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price        size           PnL   ReturnPct  duration          Tag
@@ -1494,6 +1614,30 @@ MSFT_BreakoutV2_20_Trailingstop TRADES:
 2022-03-22 04:00:00   296.392029 2022-06-13 04:00:00  236.700562  560.056903 -33430.618300 -20.139363        83 Trailing Stop
 2022-07-28 04:00:00   270.066956 2022-09-30 04:00:00  228.038361  589.891783 -24792.322840 -15.562287        64 Trailing Stop
 2022-10-25 04:00:00   280.978176 2024-12-30 05:00:00  423.979858 2875.487359 411199.529593  50.894231       797  forced_close
+
+MSFT_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-07-20 04:00:00    22.972328 2024-12-30 05:00:00  423.979858 4353.063355 1.745611e+06 1745.611185      8929 forced_close
+
+MSFT_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2002-05-08 04:00:00    16.879383 2024-12-30 05:00:00  423.979858 5924.387135 2.411821e+06 2411.820818      8272 forced_close
+
+MSFT_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-02-04 05:00:00    32.721653 2024-12-30 05:00:00  423.979858 3056.080328 1.195717e+06 1195.716505      9096 forced_close
+
+MSFT_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2001-04-18 04:00:00    20.091288 2024-12-30 05:00:00  423.979858 4977.281791 2.010267e+06 2010.267229      8657 forced_close
+
+MSFT_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2000-02-04 05:00:00    32.721653 2024-12-30 05:00:00  423.979858 3056.080328 1.195717e+06 1195.716505      9096 forced_close
+
+MSFT_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2003-09-08 04:00:00    17.768482 2024-12-30 05:00:00  423.979858 5627.942715 2.286134e+06 2286.134355      7784 forced_close
 
 NFLX_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price          size           PnL    ReturnPct  duration          Tag
@@ -1832,6 +1976,30 @@ NFLX_BreakoutV2_20_Trailingstop TRADES:
 2022-06-02 04:00:00   247.125357 2023-03-09 05:00:00  297.779999  8986.172639  4.551914e+05  20.497549       280 Trailing Stop
 2023-03-30 04:00:00   400.342423 2023-09-20 04:00:00  386.299988  6662.818146 -9.356219e+04  -3.507606       174 Trailing Stop
 2023-10-19 04:00:00   457.852546 2024-12-30 05:00:00  900.429993  5523.933537  2.444768e+06  96.663751       438  forced_close
+
+NFLX_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2002-07-30 04:00:00     0.914286 2024-12-30 05:00:00  900.429993 109374.963737 9.838450e+07 98384.497796      8189 forced_close
+
+NFLX_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2004-11-04 05:00:00         1.51 2024-12-30 05:00:00  900.429993 66225.165981 5.953113e+07 59531.125719      7361 forced_close
+
+NFLX_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2002-07-02 04:00:00     1.172857 2024-12-30 05:00:00  900.429993 85261.882793 7.667236e+07 76672.356499      8217 forced_close
+
+NFLX_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2005-06-09 04:00:00     2.235714 2024-12-30 05:00:00  900.429993 44728.441046 4.017483e+07 40174.829844      7144 forced_close
+
+NFLX_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2002-07-02 04:00:00     1.172857 2024-12-30 05:00:00  900.429993 85261.882793 7.667236e+07 76672.356499      8217 forced_close
+
+NFLX_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL    ReturnPct  duration          Tag
+2003-06-26 04:00:00     1.777143 2024-12-30 05:00:00  900.429993 56270.09189 5.056728e+07 50567.278429      7858 forced_close
 
 NVDA_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price         size           PnL     ReturnPct  duration          Tag
@@ -2191,6 +2359,30 @@ NVDA_BreakoutV2_20_Trailingstop TRADES:
 2024-08-19 04:00:00   129.967957 2024-09-06 04:00:00  102.804665 1.093153e+05 -2.969364e+06 -20.899992        18 Trailing Stop
 2024-10-07 04:00:00   139.630229 2024-12-30 05:00:00  137.477356 2.988838e+05 -6.434589e+05  -1.541839        84  forced_close
 
+NVDA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2000-12-01 05:00:00     0.170028 2024-12-30 05:00:00  137.477356 588140.069975 8.075594e+07 80755.941753      8795 forced_close
+
+NVDA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2002-07-08 04:00:00     0.149471 2024-12-30 05:00:00  137.477356 669025.565863 9.187587e+07 91875.865862      8211 forced_close
+
+NVDA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL     ReturnPct  duration          Tag
+2000-02-10 05:00:00     0.094088 2024-12-30 05:00:00  137.477356 1.062835e+06 1.460157e+08 146015.735576      9090 forced_close
+
+NVDA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2001-01-18 05:00:00     0.204356 2024-12-30 05:00:00  137.477356 489343.234991 6.717361e+07 67173.614102      8747 forced_close
+
+NVDA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL     ReturnPct  duration          Tag
+2000-02-10 05:00:00     0.094088 2024-12-30 05:00:00  137.477356 1.062835e+06 1.460157e+08 146015.735576      9090 forced_close
+
+NVDA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price          size          PnL    ReturnPct  duration          Tag
+2001-04-20 04:00:00      0.33226 2024-12-30 05:00:00  137.477356 300969.406083 4.127648e+07 41276.478172      8655 forced_close
+
 PYPL_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price        size          PnL  ReturnPct  duration          Tag
 2015-10-26 04:00:00    36.439999 2015-11-13 05:00:00   34.529999 2744.237206 -5241.492644  -5.241493        18    Stop Loss
@@ -2313,6 +2505,30 @@ PYPL_BreakoutV2_20_Trailingstop TRADES:
 2023-06-15 04:00:00    69.504256 2023-08-15 04:00:00   59.470001 1858.715779 -18650.826774 -14.436892        61 Trailing Stop
 2023-09-14 04:00:00    64.440002 2023-10-25 04:00:00   51.490002  933.012482 -12082.512355 -20.096214        41 Trailing Stop
 2023-11-15 05:00:00    68.251824 2024-12-30 05:00:00   85.430000 4475.531343  76881.467280  25.168817       411  forced_close
+
+PYPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2015-08-26 04:00:00    33.169998 2024-12-30 05:00:00       85.43 3014.772551 157552.019961  157.55202      3414 forced_close
+
+PYPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2020-03-17 04:00:00    97.870003 2024-12-30 05:00:00       85.43 1021.763535 -12710.740873 -12.710741      1749 forced_close
+
+PYPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2015-08-17 04:00:00        38.73 2024-12-30 05:00:00       85.43 2581.977826 120578.366421 120.578366      3423 forced_close
+
+PYPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size         PnL  ReturnPct  duration          Tag
+2018-10-16 04:00:00    80.610001 2024-12-30 05:00:00       85.43 1240.540866 5979.406598   5.979407      2267 forced_close
+
+PYPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2015-08-17 04:00:00        38.73 2024-12-30 05:00:00       85.43 2581.977826 120578.366421 120.578366      3423 forced_close
+
+PYPL_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL  ReturnPct  duration          Tag
+2016-10-21 04:00:00    44.150002 2024-12-30 05:00:00       85.43 2265.005584 93499.427752  93.499428      2992 forced_close
 
 QQQ_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price        size           PnL   ReturnPct  duration          Tag
@@ -2493,6 +2709,30 @@ QQQ_BreakoutV2_20_Trailingstop TRADES:
 2022-03-22 04:00:00   349.749084 2022-05-09 04:00:00  291.147278  365.991833 -21447.782601 -16.755385        48 Trailing Stop
 2022-07-19 04:00:00   307.950276 2022-10-10 04:00:00  262.000000  812.122289 -37317.243196 -14.921330        83 Trailing Stop
 2022-10-25 04:00:00   321.186819 2024-12-30 05:00:00  514.842224 1896.495165 367266.540411  60.293697       797  forced_close
+
+QQQ_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2000-04-17 04:00:00    75.970093 2024-12-30 05:00:00  514.842224 1316.307462 577690.661319 577.690661      9023 forced_close
+
+QQQ_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2001-02-14 05:00:00     48.69717 2024-12-30 05:00:00  514.842224 2053.507411 957232.322531 957.232323      8720 forced_close
+
+QQQ_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2000-02-01 05:00:00    78.062759 2024-12-30 05:00:00  514.842224 1281.020563 559523.475832 559.523476      9099 forced_close
+
+QQQ_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2003-03-18 05:00:00    22.827057 2024-12-30 05:00:00  514.842224 4380.766233 2.155403e+06 2155.403431      7958 forced_close
+
+QQQ_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size           PnL  ReturnPct  duration          Tag
+2000-02-01 05:00:00    78.062759 2024-12-30 05:00:00  514.842224 1281.020563 559523.475832 559.523476      9099 forced_close
+
+QQQ_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price       size          PnL   ReturnPct  duration          Tag
+2003-06-04 04:00:00    25.785337 2024-12-30 05:00:00  514.842224 3878.17302 1.896647e+06 1896.647223      7880 forced_close
 
 TSLA_Breakout_Simple TRADES:
          entry_date  entry_price           exit_date  exit_price         size           PnL    ReturnPct  duration          Tag
@@ -2749,4 +2989,28 @@ TSLA_BreakoutV2_20_Trailingstop TRADES:
 2023-11-28 05:00:00   246.720001 2024-01-18 05:00:00  211.880005  1005.973907  -35048.127220 -14.121270        51 Trailing Stop
 2024-04-29 04:00:00   233.657259 2024-07-24 04:00:00  215.990005  5444.737025  -96193.549424  -7.561183        86 Trailing Stop
 2024-09-05 04:00:00   266.585997 2024-12-30 05:00:00  417.410004  4396.020244  663025.385649  56.576117       116  forced_close
+
+TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2010-08-13 04:00:00     1.221333 2024-12-30 05:00:00  417.410004 81877.749802 3.407659e+07 34076.591845      5253 forced_close
+
+TSLA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price        size          PnL   ReturnPct  duration          Tag
+2016-02-22 05:00:00    11.849333 2024-12-30 05:00:00  417.410004 8439.293723 3.422646e+06 3422.645624      3234 forced_close
+
+TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2010-08-23 04:00:00        1.342 2024-12-30 05:00:00  417.410004 74515.647863 3.100358e+07 31003.576847      5243 forced_close
+
+TSLA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2011-08-11 04:00:00     1.686667 2024-12-30 05:00:00  417.410004 59288.527046 2.464762e+07 24647.624291      4890 forced_close
+
+TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2010-08-23 04:00:00        1.342 2024-12-30 05:00:00  417.410004 74515.647863 3.100358e+07 31003.576847      5243 forced_close
+
+TSLA_TwoStdDev_YearlyTrend_LowerBand_Trailing TRADES:
+         entry_date  entry_price           exit_date  exit_price         size          PnL    ReturnPct  duration          Tag
+2011-11-03 04:00:00        2.164 2024-12-30 05:00:00  417.410004 46210.720154 1.918882e+07 19188.816869      4806 forced_close
 

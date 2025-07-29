@@ -5,19 +5,19 @@ This report details the top 5 swing trading strategies based on backtesting resu
 
 ## Strategy Comparison
 
-| Strategy                        |   # Trades |   Equity Final [$] |   Return [%] |   Win Rate [%] |   Best Trade [%] |   Worst Trade [%] |   Avg. Trade [%] |   Sharpe Ratio |
-|:--------------------------------|-----------:|-------------------:|-------------:|---------------:|-----------------:|------------------:|-----------------:|---------------:|
-| AAPL_BreakoutV2_20_Trailingstop |         26 |        1.67533e+07 |      16653.3 |           46.2 |          41133   |           -2057.9 |           2958.6 |           0.95 |
-| AAPL_BreakoutV2_TrailingStop    |        135 |        3.67842e+06 |       3578.4 |           53.3 |           4497.6 |           -1717.1 |            311.1 |           0.93 |
-| META_BreakoutV2_20_Trailingstop |         12 |        1.68928e+06 |       1589.3 |           33.3 |          33054.7 |           -3131.9 |           3714.5 |           0.93 |
-| NVDA_BreakoutV2_20_Trailingstop |         47 |        6.74246e+07 |      67324.6 |           36.2 |          27400.9 |           -2581.4 |           1488.8 |           0.92 |
-| NVDA_BreakoutV2_Full_Features   |         94 |        5.59353e+06 |       5493.5 |           28.7 |          21645.1 |           -2621.5 |            296.3 |           0.9  |
+| Strategy                                       |   # Trades |   Equity Final [$] |   Return [%] |   Win Rate [%] |   Best Trade [%] |   Worst Trade [%] |   Avg. Trade [%] |   Sharpe Ratio |
+|:-----------------------------------------------|-----------:|-------------------:|-------------:|---------------:|-----------------:|------------------:|-----------------:|---------------:|
+| AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing  |          1 |        8.7566e+07  |      87466   |          100   |      8.7466e+06  |       8.7466e+06  |      8.7466e+06  |           1.05 |
+| TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing |          1 |        3.11036e+07 |      31003.6 |          100   |      3.10036e+06 |       3.10036e+06 |      3.10036e+06 |           0.98 |
+| AAPL_BreakoutV2_20_Trailingstop                |         26 |        1.67533e+07 |      16653.3 |           46.2 |  41133           |   -2057.9         |   2958.6         |           0.95 |
+| TSLA_TwoStdDev_YearlyTrend_LowerBand_Trailing  |          1 |        1.92888e+07 |      19188.8 |          100   |      1.91888e+06 |       1.91888e+06 |      1.91888e+06 |           0.94 |
+| AAPL_BreakoutV2_TrailingStop                   |        135 |        3.67842e+06 |       3578.4 |           53.3 |   4497.6         |   -1717.1         |    311.1         |           0.93 |
 
 ## Winning Strategy
 
-The winning strategy is **AAPL_BreakoutV2_20_Trailingstop** with a Sharpe Ratio of 0.95.
+The winning strategy is **AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing** with a Sharpe Ratio of 1.05.
 
 ### Strategy Description
 
-The winning strategy is AAPL_BreakoutV2_20_Trailingstop. It is a BreakoutV2 strategy applied to AAPL.
+The winning strategy is AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing. It is a TwoStdDev strategy applied to AAPL.
 

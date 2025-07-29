@@ -133,6 +133,98 @@ class BreakoutStrategy(Strategy):
 
 # In custom_backtest_engine.py
 
+def STD(series, n):
+    return pd.Series(series).rolling(n).std()
+
+class TwoStdDevStrategy(Strategy):
+    def __init__(self, 
+                 # --- Behavior Switches ---
+                 buy_condition_option='Lower Band - Cross Above',
+                 use_trailing_stop=True,
+                 fixed_stop_perc=0.05,
+                 
+                 # --- Strategy Parameters ---
+                 length=20, 
+                 stdev_factor=2.0,
+                 trailing_stop_perc=0.10, 
+                 max_pyramids=5, 
+                 pyramid_when_profitable=True,
+                 entry_size_perc=0.2, 
+                 tp_long_perc=1.10):
+        
+        # --- Store all parameters ---
+        self.buy_condition_option = buy_condition_option
+        self.use_trailing_stop = use_trailing_stop
+        self.fixed_stop_perc = fixed_stop_perc
+        self.length = length
+        self.stdev_factor = stdev_factor
+        self.trailing_stop_perc = trailing_stop_perc
+        self.max_pyramids = max_pyramids
+        self.pyramid_when_profitable = pyramid_when_profitable
+        self.entry_size_perc = entry_size_perc
+        self.tp_long_perc = tp_long_perc
+        
+        # --- State Variables ---
+        self.pyramid_count = 0
+        self.long_stop_price = 0.0
+
+    def generate_signals(self, data, i, position):
+        if i < self.length:
+            return 'hold', None, None
+
+        price = data['Close'].iloc[i]
+        
+        # --- INDICATORS ---
+        sma = data['Close'].iloc[i-self.length+1:i+1].mean()
+        std = data['Close'].iloc[i-self.length+1:i+1].std()
+        upper_band = sma + self.stdev_factor * std
+        lower_band = sma - self.stdev_factor * std
+
+        # --- EXIT LOGIC ---
+        if position:
+            if self.tp_long_perc and (price >= position.take_profit):
+                return 'sell', 'Take Profit', None
+
+            if self.use_trailing_stop:
+                new_stop_candidate = data['High'].iloc[i] * (1 - self.trailing_stop_perc)
+                self.long_stop_price = max(self.long_stop_price, new_stop_candidate)
+                if price <= self.long_stop_price:
+                    return 'sell', 'Trailing Stop', None
+            else:
+                if price <= position.stop_loss:
+                    return 'sell', 'Fixed Stop', None
+
+        # --- ENTRY LOGIC ---
+        buy_signal = False
+        if self.buy_condition_option == 'Lower Band - Cross Above' and price > lower_band and data['Close'].iloc[i-1] < lower_band:
+            buy_signal = True
+        elif self.buy_condition_option == 'SMA - Cross Above' and price > sma and data['Close'].iloc[i-1] < sma:
+            buy_signal = True
+        elif self.buy_condition_option == 'Upper Band - Cross Above' and price > upper_band and data['Close'].iloc[i-1] < upper_band:
+            buy_signal = True
+
+        if buy_signal:
+            can_pyramid = not self.pyramid_when_profitable or (position and price > position.entry_price)
+            
+            if not position:
+                self.pyramid_count = 1
+                sl_tp_dict = {'tp': price * self.tp_long_perc}
+                if self.use_trailing_stop:
+                    self.long_stop_price = data['High'].iloc[i] * (1 - self.trailing_stop_perc)
+                    sl_tp_dict['sl'] = self.long_stop_price
+                else:
+                    sl_tp_dict['sl'] = price * (1 - self.fixed_stop_perc)
+                return 'buy', sl_tp_dict, self.entry_size_perc
+
+            elif position and self.pyramid_count < self.max_pyramids and can_pyramid:
+                self.pyramid_count += 1
+                return 'pyramid', {'sl': self.long_stop_price}, self.entry_size_perc
+
+        if position and self.use_trailing_stop:
+            return 'hold', {'sl': self.long_stop_price}, None
+        
+        return 'hold', None, None
+
 class BreakoutVer2Strategy(Strategy):
     def __init__(self, 
                  # --- Behavior Switches ---

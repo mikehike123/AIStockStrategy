@@ -9,7 +9,8 @@ from custom_backtest_engine import (
     MovingAverageCrossoverStrategy, 
     RsiMomentumStrategy, 
     BreakoutStrategy,
-    BreakoutVer2Strategy
+    BreakoutVer2Strategy,
+    TwoStdDevStrategy
 )
 from backtester import generate_summary_from_trades
 
@@ -53,6 +54,64 @@ STRATEGIES = [
         pyramid_profit_perc=0.10,    # Add to position if 5% in profit
         tp_long_perc=999
     )),
+    
+    # --- Two Standard Deviation Strategies ---
+    ("TwoStdDev_MonthlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='Lower Band - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=50.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=20
+    )),
+    ("TwoStdDev_YearlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='Lower Band - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=50.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=260
+    )),
+    ("TwoStdDev_MonthlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='SMA - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=50.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=20
+    )),
+    ("TwoStdDev_YearlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='SMA - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=50.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=260
+    )),
+    ("TwoStdDev_MonthlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='SMA - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=50.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=20
+    )),
+    ("TwoStdDev_YearlyTrend_LowerBand_Trailing", lambda: TwoStdDevStrategy(
+        buy_condition_option='Upper Band - Cross Above',
+        use_trailing_stop=True,
+        trailing_stop_perc=1.0,
+        max_pyramids=0,
+        entry_size_perc=1.0,
+        tp_long_perc=10000,
+        length=260
+    )),
+
+   
 ]
 
 
