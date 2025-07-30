@@ -16,9 +16,10 @@ This report shows the performance of each strategy when applied across the entir
 |:-------------------------------------------|:----------------------------|-----------------------:|-------------------:|
 | Buy and Hold                               | 300,902.5                   |                  200.9 |              -57.2 |
 | TwoStdDev_MonthlyTrend_LowerBand_Trailing  | 280,328.5                   |                  180.3 |              -56.3 |
-| Breakout_Simple                            | 241,605.7                   |                  141.6 |              -52.7 |
 | BreakoutV2_As_Simple                       | 241,605.7                   |                  141.6 |              -52.7 |
-| BreakoutV2_20_Trailingstop                 | 200,934.8                   |                  100.9 |              -25.1 |
+| Breakout_Simple                            | 241,605.7                   |                  141.6 |              -52.7 |
+| BreakoutV2_20_Trailingstop                 | 205,578.2                   |                  105.6 |              -39.5 |
+| BreakoutV2_20_Trailingstop_Pyramid         | 200,934.8                   |                  100.9 |              -25.1 |
 | TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End | 168,121.2                   |                   68.1 |              -48.2 |
 | BreakoutV2_Full_Features                   | 157,528.6                   |                   57.5 |              -10.1 |
 | BreakoutV2_TrailingStop                    | 146,261.1                   |                   46.3 |              -13.1 |

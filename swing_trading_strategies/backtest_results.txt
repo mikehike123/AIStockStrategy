@@ -38,7 +38,7 @@ Worst Trade [%]: -1195.6
 Avg. Trade [%]: -13.7
 Sharpe Ratio: 0.74
 
-AAPL_BreakoutV2_20_Trailingstop:
+AAPL_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 6
 Equity Final [$]: 141328.54
 Return [%]: 41.3
@@ -47,6 +47,16 @@ Best Trade [%]: 3610.8
 Worst Trade [%]: -2413.5
 Avg. Trade [%]: -4.1
 Sharpe Ratio: 0.53
+
+AAPL_BreakoutV2_20_Trailingstop:
+# Trades: 6
+Equity Final [$]: 139612.60
+Return [%]: 39.6
+Win Rate [%]: 50.0
+Best Trade [%]: 5445.1
+Worst Trade [%]: -2413.5
+Avg. Trade [%]: 949.9
+Sharpe Ratio: 0.44
 
 AAPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -138,7 +148,7 @@ Worst Trade [%]: -1083.6
 Avg. Trade [%]: -264.4
 Sharpe Ratio: 0.28
 
-ADBE_BreakoutV2_20_Trailingstop:
+ADBE_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 6
 Equity Final [$]: 126734.56
 Return [%]: 26.7
@@ -147,6 +157,16 @@ Best Trade [%]: 3989.1
 Worst Trade [%]: -2781.0
 Avg. Trade [%]: -68.5
 Sharpe Ratio: 0.37
+
+ADBE_BreakoutV2_20_Trailingstop:
+# Trades: 6
+Equity Final [$]: 148729.55
+Return [%]: 48.7
+Win Rate [%]: 66.7
+Best Trade [%]: 6440.7
+Worst Trade [%]: -2781.0
+Avg. Trade [%]: 1068.0
+Sharpe Ratio: 0.48
 
 ADBE_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -238,7 +258,7 @@ Worst Trade [%]: -762.2
 Avg. Trade [%]: -68.3
 Sharpe Ratio: 0.53
 
-AMZN_BreakoutV2_20_Trailingstop:
+AMZN_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 6
 Equity Final [$]: 121927.43
 Return [%]: 21.9
@@ -247,6 +267,16 @@ Best Trade [%]: 2850.7
 Worst Trade [%]: -2292.6
 Avg. Trade [%]: -295.9
 Sharpe Ratio: 0.33
+
+AMZN_BreakoutV2_20_Trailingstop:
+# Trades: 6
+Equity Final [$]: 120284.90
+Return [%]: 20.3
+Win Rate [%]: 33.3
+Best Trade [%]: 4710.0
+Worst Trade [%]: -2292.6
+Avg. Trade [%]: 652.9
+Sharpe Ratio: 0.30
 
 AMZN_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -338,7 +368,7 @@ Worst Trade [%]: -1284.0
 Avg. Trade [%]: -99.9
 Sharpe Ratio: 0.67
 
-GOOGL_BreakoutV2_20_Trailingstop:
+GOOGL_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 5
 Equity Final [$]: 180760.84
 Return [%]: 80.8
@@ -347,6 +377,16 @@ Best Trade [%]: 6488.5
 Worst Trade [%]: -2014.7
 Avg. Trade [%]: 548.6
 Sharpe Ratio: 0.79
+
+GOOGL_BreakoutV2_20_Trailingstop:
+# Trades: 5
+Equity Final [$]: 138170.10
+Return [%]: 38.2
+Win Rate [%]: 40.0
+Best Trade [%]: 8911.3
+Worst Trade [%]: -2014.7
+Avg. Trade [%]: 1399.1
+Sharpe Ratio: 0.43
 
 GOOGL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -438,7 +478,7 @@ Worst Trade [%]: -1063.4
 Avg. Trade [%]: 133.6
 Sharpe Ratio: 0.77
 
-META_BreakoutV2_20_Trailingstop:
+META_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 5
 Equity Final [$]: 362728.24
 Return [%]: 262.7
@@ -447,6 +487,16 @@ Best Trade [%]: 15677.7
 Worst Trade [%]: -3131.9
 Avg. Trade [%]: 2955.8
 Sharpe Ratio: 1.22
+
+META_BreakoutV2_20_Trailingstop:
+# Trades: 5
+Equity Final [$]: 252008.12
+Return [%]: 152.0
+Win Rate [%]: 40.0
+Best Trade [%]: 19388.9
+Worst Trade [%]: -3131.9
+Avg. Trade [%]: 4131.9
+Sharpe Ratio: 0.83
 
 META_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -538,7 +588,7 @@ Worst Trade [%]: -1219.2
 Avg. Trade [%]: 83.8
 Sharpe Ratio: 0.66
 
-MSFT_BreakoutV2_20_Trailingstop:
+MSFT_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 5
 Equity Final [$]: 184137.60
 Return [%]: 84.1
@@ -547,6 +597,16 @@ Best Trade [%]: 4949.7
 Worst Trade [%]: -2013.9
 Avg. Trade [%]: 659.6
 Sharpe Ratio: 0.86
+
+MSFT_BreakoutV2_20_Trailingstop:
+# Trades: 5
+Equity Final [$]: 152345.31
+Return [%]: 52.3
+Win Rate [%]: 40.0
+Best Trade [%]: 7186.4
+Worst Trade [%]: -2013.9
+Avg. Trade [%]: 1491.0
+Sharpe Ratio: 0.52
 
 MSFT_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -638,7 +698,7 @@ Worst Trade [%]: -1080.0
 Avg. Trade [%]: -356.5
 Sharpe Ratio: 0.06
 
-NFLX_BreakoutV2_20_Trailingstop:
+NFLX_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 5
 Equity Final [$]: 147838.93
 Return [%]: 47.8
@@ -647,6 +707,16 @@ Best Trade [%]: 2162.7
 Worst Trade [%]: -1901.6
 Avg. Trade [%]: 518.8
 Sharpe Ratio: 0.47
+
+NFLX_BreakoutV2_20_Trailingstop:
+# Trades: 5
+Equity Final [$]: 226840.52
+Return [%]: 126.8
+Win Rate [%]: 80.0
+Best Trade [%]: 4519.5
+Worst Trade [%]: -1901.6
+Avg. Trade [%]: 2019.5
+Sharpe Ratio: 0.73
 
 NFLX_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -738,7 +808,7 @@ Worst Trade [%]: -1230.6
 Avg. Trade [%]: 298.8
 Sharpe Ratio: 0.92
 
-NVDA_BreakoutV2_20_Trailingstop:
+NVDA_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 7
 Equity Final [$]: 476825.59
 Return [%]: 376.8
@@ -747,6 +817,16 @@ Best Trade [%]: 14305.5
 Worst Trade [%]: -1523.6
 Avg. Trade [%]: 2917.8
 Sharpe Ratio: 1.23
+
+NVDA_BreakoutV2_20_Trailingstop:
+# Trades: 7
+Equity Final [$]: 643435.87
+Return [%]: 543.4
+Win Rate [%]: 42.9
+Best Trade [%]: 17987.8
+Worst Trade [%]: -1523.6
+Avg. Trade [%]: 4433.8
+Sharpe Ratio: 1.32
 
 NVDA_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -838,7 +918,7 @@ Worst Trade [%]: -1477.4
 Avg. Trade [%]: -4.0
 Sharpe Ratio: 0.75
 
-PYPL_BreakoutV2_20_Trailingstop:
+PYPL_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 9
 Equity Final [$]: 127281.58
 Return [%]: 27.3
@@ -847,6 +927,16 @@ Best Trade [%]: 8264.4
 Worst Trade [%]: -2009.8
 Avg. Trade [%]: -300.2
 Sharpe Ratio: 0.38
+
+PYPL_BreakoutV2_20_Trailingstop:
+# Trades: 9
+Equity Final [$]: 84256.65
+Return [%]: -15.7
+Win Rate [%]: 33.3
+Best Trade [%]: 11776.2
+Worst Trade [%]: -2009.8
+Avg. Trade [%]: 356.6
+Sharpe Ratio: 0.04
 
 PYPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -938,7 +1028,7 @@ Worst Trade [%]: -959.7
 Avg. Trade [%]: -60.1
 Sharpe Ratio: 0.28
 
-QQQ_BreakoutV2_20_Trailingstop:
+QQQ_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 5
 Equity Final [$]: 152135.54
 Return [%]: 52.1
@@ -947,6 +1037,16 @@ Best Trade [%]: 3545.2
 Worst Trade [%]: -2204.7
 Avg. Trade [%]: 165.8
 Sharpe Ratio: 0.72
+
+QQQ_BreakoutV2_20_Trailingstop:
+# Trades: 5
+Equity Final [$]: 130559.00
+Return [%]: 30.6
+Win Rate [%]: 40.0
+Best Trade [%]: 5462.3
+Worst Trade [%]: -2204.7
+Avg. Trade [%]: 1014.5
+Sharpe Ratio: 0.41
 
 QQQ_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
@@ -1038,7 +1138,7 @@ Worst Trade [%]: -1198.4
 Avg. Trade [%]: 454.8
 Sharpe Ratio: 1.31
 
-TSLA_BreakoutV2_20_Trailingstop:
+TSLA_BreakoutV2_20_Trailingstop_Pyramid:
 # Trades: 14
 Equity Final [$]: 188584.41
 Return [%]: 88.6
@@ -1047,6 +1147,16 @@ Best Trade [%]: 6623.9
 Worst Trade [%]: -2297.0
 Avg. Trade [%]: 3.5
 Sharpe Ratio: 0.64
+
+TSLA_BreakoutV2_20_Trailingstop:
+# Trades: 14
+Equity Final [$]: 225117.73
+Return [%]: 125.1
+Win Rate [%]: 42.9
+Best Trade [%]: 11768.2
+Worst Trade [%]: -2143.5
+Avg. Trade [%]: 1123.1
+Sharpe Ratio: 0.68
 
 TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1

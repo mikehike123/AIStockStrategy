@@ -46,12 +46,20 @@ STRATEGIES = [
         pyramid_profit_perc=0.10,    # Add to position if 5% in profit
         tp_long_perc=999
     )),
-    ("BreakoutV2_20_Trailingstop", lambda: BreakoutVer2Strategy(
+    ("BreakoutV2_20_Trailingstop_Pyramid", lambda: BreakoutVer2Strategy(
         use_trailing_stop=True,
         trailing_stop_perc=0.20,     # 20% trailing stop
         max_pyramids=5,              # Allow up to 5 entries
         entry_size_perc=0.20,        # Use 25% of equity per entry
-        pyramid_profit_perc=0.10,    # Add to position if 5% in profit
+        pyramid_profit_perc=0.10,    # Add to position if 10% in profit
+        tp_long_perc=999
+    )),
+    ("BreakoutV2_20_Trailingstop", lambda: BreakoutVer2Strategy(
+        use_trailing_stop=True,
+        trailing_stop_perc=0.20,     # 20% trailing stop
+        max_pyramids=1,              # Allow up to 5 entries
+        entry_size_perc=1.0,        # Use 25% of equity per entry
+        pyramid_profit_perc=0.10,    # Add to position if 10% in profit
         tp_long_perc=999
     )),
     
