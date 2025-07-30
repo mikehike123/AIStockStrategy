@@ -89,6 +89,13 @@ It's important to understand how `backtesting.py` handles open positions at the 
 - Implemented a summary generator that computes all key metrics (trades, final equity, return, etc.) directly from the trade log and equity curve for each strategy/symbol.
 - Ensured that the summary in backtest_results.txt always matches the actual trades in the log for all strategies.
 - Cleaned up debug print statements and updated swing_trading_report.md with accurate results and observations.
+- Centralized `start_date` and `end_date` in `config.py` and updated `main.py` and `portfolio_analyzer.py` to use them, resolving date inconsistencies.
+- Added and then removed debug statements for max drawdown calculation in `portfolio_analyzer.py` for verification.
+- Added generation date and analysis date span to `swing_trading_report.md`.
+- Fixed `report_generator.py` import error in `main.py` by moving the import statement to after `backtest_summary.csv` is created.
+- Fixed `SyntaxError` in `report_generator.py` caused by nested triple-quoted string literal.
+- Corrected `ValueError` in `report_generator.py` by properly handling `NaN` values during formatting.
+- Ensured "Report Generated" and "Analysis Period" are on separate lines in `swing_trading_report.md` using explicit Markdown line breaks.
 
 ## What Is Left To Do
 - (Optional) Refactor report generation to include additional metrics (e.g., max drawdown, Sharpe ratio) using only trade log and equity curve.

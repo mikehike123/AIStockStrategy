@@ -1,1100 +1,1100 @@
 AAPL_Breakout_Simple:
-# Trades: 12
-Equity Final [$]: 49384023.03
-Return [%]: 49284.0
-Win Rate [%]: 8.3
-Best Trade [%]: 10395628.2
-Worst Trade [%]: -1251.9
-Avg. Trade [%]: 865703.9
-Sharpe Ratio: 0.90
+# Trades: 3
+Equity Final [$]: 228694.88
+Return [%]: 128.7
+Win Rate [%]: 33.3
+Best Trade [%]: 16842.0
+Worst Trade [%]: -886.9
+Avg. Trade [%]: 5101.4
+Sharpe Ratio: 0.87
 
 AAPL_BreakoutV2_As_Simple:
-# Trades: 12
-Equity Final [$]: 49384023.03
-Return [%]: 49284.0
-Win Rate [%]: 8.3
-Best Trade [%]: 10395628.2
-Worst Trade [%]: -1251.9
-Avg. Trade [%]: 865703.9
-Sharpe Ratio: 0.90
+# Trades: 3
+Equity Final [$]: 228694.88
+Return [%]: 128.7
+Win Rate [%]: 33.3
+Best Trade [%]: 16842.0
+Worst Trade [%]: -886.9
+Avg. Trade [%]: 5101.4
+Sharpe Ratio: 0.87
 
 AAPL_BreakoutV2_TrailingStop:
-# Trades: 135
-Equity Final [$]: 3678418.17
-Return [%]: 3578.4
-Win Rate [%]: 53.3
-Best Trade [%]: 4497.6
-Worst Trade [%]: -1717.1
-Avg. Trade [%]: 311.1
-Sharpe Ratio: 0.93
+# Trades: 22
+Equity Final [$]: 146597.13
+Return [%]: 46.6
+Win Rate [%]: 45.5
+Best Trade [%]: 1578.3
+Worst Trade [%]: -886.9
+Avg. Trade [%]: 201.6
+Sharpe Ratio: 0.68
 
 AAPL_BreakoutV2_Full_Features:
-# Trades: 75
-Equity Final [$]: 1208205.67
-Return [%]: 1108.2
-Win Rate [%]: 29.3
-Best Trade [%]: 10874.1
-Worst Trade [%]: -1717.1
-Avg. Trade [%]: 83.1
+# Trades: 13
+Equity Final [$]: 143230.47
+Return [%]: 43.2
+Win Rate [%]: 23.1
+Best Trade [%]: 4910.9
+Worst Trade [%]: -1195.6
+Avg. Trade [%]: -13.7
 Sharpe Ratio: 0.74
 
 AAPL_BreakoutV2_20_Trailingstop:
-# Trades: 26
-Equity Final [$]: 16753334.02
-Return [%]: 16653.3
-Win Rate [%]: 46.2
-Best Trade [%]: 41133.0
-Worst Trade [%]: -2057.9
-Avg. Trade [%]: 2958.6
-Sharpe Ratio: 0.95
+# Trades: 6
+Equity Final [$]: 141328.54
+Return [%]: 41.3
+Win Rate [%]: 50.0
+Best Trade [%]: 3610.8
+Worst Trade [%]: -2413.5
+Avg. Trade [%]: -4.1
+Sharpe Ratio: 0.53
 
 AAPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 32411631.96
-Return [%]: 32311.6
+Equity Final [$]: 247918.89
+Return [%]: 147.9
 Win Rate [%]: 100.0
-Best Trade [%]: 3231163.2
-Worst Trade [%]: 3231163.2
-Avg. Trade [%]: 3231163.2
-Sharpe Ratio: 0.80
+Best Trade [%]: 14791.9
+Worst Trade [%]: 14791.9
+Avg. Trade [%]: 14791.9
+Sharpe Ratio: 0.85
 
 AAPL_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 83713134.44
-Return [%]: 83613.1
+Equity Final [$]: 125685.52
+Return [%]: 25.7
 Win Rate [%]: 100.0
-Best Trade [%]: 8361313.4
-Worst Trade [%]: 8361313.4
-Avg. Trade [%]: 8361313.4
-Sharpe Ratio: 0.99
+Best Trade [%]: 2568.6
+Worst Trade [%]: 2568.6
+Avg. Trade [%]: 2568.6
+Sharpe Ratio: 0.41
 
 AAPL_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 87565972.03
-Return [%]: 87466.0
+Equity Final [$]: 134102.03
+Return [%]: 34.1
 Win Rate [%]: 100.0
-Best Trade [%]: 8746597.2
-Worst Trade [%]: 8746597.2
-Avg. Trade [%]: 8746597.2
-Sharpe Ratio: 1.05
+Best Trade [%]: 3410.2
+Worst Trade [%]: 3410.2
+Avg. Trade [%]: 3410.2
+Sharpe Ratio: 0.44
 
 AAPL_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 134
-Equity Final [$]: 320071.67
-Return [%]: 220.1
-Win Rate [%]: 45.5
-Best Trade [%]: 2626.3
-Worst Trade [%]: -1659.6
-Avg. Trade [%]: 286.5
-Sharpe Ratio: 0.83
+# Trades: 22
+Equity Final [$]: 119633.91
+Return [%]: 19.6
+Win Rate [%]: 40.9
+Best Trade [%]: 2196.4
+Worst Trade [%]: -1186.8
+Avg. Trade [%]: 221.1
+Sharpe Ratio: 0.96
 
 AAPL_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 4
-Equity Final [$]: 50806745.96
-Return [%]: 50706.7
-Win Rate [%]: 50.0
-Best Trade [%]: 602594.7
-Worst Trade [%]: -5629.8
-Avg. Trade [%]: 171977.6
-Sharpe Ratio: 0.98
+# Trades: 1
+Equity Final [$]: 194674.37
+Return [%]: 94.7
+Win Rate [%]: 100.0
+Best Trade [%]: 8458.6
+Worst Trade [%]: 8458.6
+Avg. Trade [%]: 8458.6
+Sharpe Ratio: 0.75
 
 ADBE_Breakout_Simple:
-# Trades: 13
-Equity Final [$]: 1571870.29
-Return [%]: 1471.9
-Win Rate [%]: 7.7
-Best Trade [%]: 396942.8
-Worst Trade [%]: -1286.8
-Avg. Trade [%]: 29832.8
-Sharpe Ratio: 0.48
-
-ADBE_BreakoutV2_As_Simple:
-# Trades: 13
-Equity Final [$]: 1571870.29
-Return [%]: 1471.9
-Win Rate [%]: 7.7
-Best Trade [%]: 396942.8
-Worst Trade [%]: -1286.8
-Avg. Trade [%]: 29832.8
-Sharpe Ratio: 0.48
-
-ADBE_BreakoutV2_TrailingStop:
-# Trades: 164
-Equity Final [$]: 17860.49
-Return [%]: -82.1
-Win Rate [%]: 34.8
-Best Trade [%]: 4425.3
-Worst Trade [%]: -1883.7
-Avg. Trade [%]: -80.1
-Sharpe Ratio: -0.31
-
-ADBE_BreakoutV2_Full_Features:
-# Trades: 86
-Equity Final [$]: 109644.54
-Return [%]: 9.6
-Win Rate [%]: 14.0
-Best Trade [%]: 3562.0
-Worst Trade [%]: -1441.7
-Avg. Trade [%]: -373.7
+# Trades: 7
+Equity Final [$]: 92309.16
+Return [%]: -7.7
+Win Rate [%]: 14.3
+Best Trade [%]: 5217.1
+Worst Trade [%]: -1005.7
+Avg. Trade [%]: 61.6
 Sharpe Ratio: 0.10
 
-ADBE_BreakoutV2_20_Trailingstop:
-# Trades: 33
-Equity Final [$]: 263562.00
-Return [%]: 163.6
-Win Rate [%]: 27.3
-Best Trade [%]: 15142.3
-Worst Trade [%]: -2781.0
-Avg. Trade [%]: 35.2
+ADBE_BreakoutV2_As_Simple:
+# Trades: 7
+Equity Final [$]: 92309.16
+Return [%]: -7.7
+Win Rate [%]: 14.3
+Best Trade [%]: 5217.1
+Worst Trade [%]: -1005.7
+Avg. Trade [%]: 61.6
+Sharpe Ratio: 0.10
+
+ADBE_BreakoutV2_TrailingStop:
+# Trades: 26
+Equity Final [$]: 102913.96
+Return [%]: 2.9
+Win Rate [%]: 42.3
+Best Trade [%]: 1691.1
+Worst Trade [%]: -802.9
+Avg. Trade [%]: 27.6
+Sharpe Ratio: 0.13
+
+ADBE_BreakoutV2_Full_Features:
+# Trades: 15
+Equity Final [$]: 112137.77
+Return [%]: 12.1
+Win Rate [%]: 20.0
+Best Trade [%]: 1772.1
+Worst Trade [%]: -1083.6
+Avg. Trade [%]: -264.4
 Sharpe Ratio: 0.28
+
+ADBE_BreakoutV2_20_Trailingstop:
+# Trades: 6
+Equity Final [$]: 126734.56
+Return [%]: 26.7
+Win Rate [%]: 50.0
+Best Trade [%]: 3989.1
+Worst Trade [%]: -2781.0
+Avg. Trade [%]: -68.5
+Sharpe Ratio: 0.37
 
 ADBE_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2600405.11
-Return [%]: 2500.4
+Equity Final [$]: 184894.77
+Return [%]: 84.9
 Win Rate [%]: 100.0
-Best Trade [%]: 250040.5
-Worst Trade [%]: 250040.5
-Avg. Trade [%]: 250040.5
-Sharpe Ratio: 0.52
+Best Trade [%]: 8489.5
+Worst Trade [%]: 8489.5
+Avg. Trade [%]: 8489.5
+Sharpe Ratio: 0.61
 
 ADBE_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 1496892.34
-Return [%]: 1396.9
+Equity Final [$]: 135844.07
+Return [%]: 35.8
 Win Rate [%]: 100.0
-Best Trade [%]: 139689.2
-Worst Trade [%]: 139689.2
-Avg. Trade [%]: 139689.2
-Sharpe Ratio: 0.48
+Best Trade [%]: 3584.4
+Worst Trade [%]: 3584.4
+Avg. Trade [%]: 3584.4
+Sharpe Ratio: 0.41
 
 ADBE_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2151548.97
-Return [%]: 2051.5
+Equity Final [$]: 111405.73
+Return [%]: 11.4
 Win Rate [%]: 100.0
-Best Trade [%]: 205154.9
-Worst Trade [%]: 205154.9
-Avg. Trade [%]: 205154.9
-Sharpe Ratio: 0.55
+Best Trade [%]: 1140.6
+Worst Trade [%]: 1140.6
+Avg. Trade [%]: 1140.6
+Sharpe Ratio: 0.24
 
 ADBE_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 139
-Equity Final [$]: 153325.94
-Return [%]: 53.3
-Win Rate [%]: 35.3
-Best Trade [%]: 3163.3
-Worst Trade [%]: -1577.5
-Avg. Trade [%]: 25.3
-Sharpe Ratio: 0.29
+# Trades: 22
+Equity Final [$]: 95083.66
+Return [%]: -4.9
+Win Rate [%]: 31.8
+Best Trade [%]: 2168.2
+Worst Trade [%]: -1129.1
+Avg. Trade [%]: -102.9
+Sharpe Ratio: -0.20
 
 ADBE_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 6
-Equity Final [$]: 608881.11
-Return [%]: 508.9
+# Trades: 2
+Equity Final [$]: 86266.18
+Return [%]: -13.7
 Win Rate [%]: 50.0
-Best Trade [%]: 70308.2
-Worst Trade [%]: -5258.1
-Avg. Trade [%]: 11089.6
-Sharpe Ratio: 0.38
+Best Trade [%]: 3669.1
+Worst Trade [%]: -3428.1
+Avg. Trade [%]: 120.5
+Sharpe Ratio: 0.03
 
 AMZN_Breakout_Simple:
-# Trades: 14
-Equity Final [$]: 7650338.11
-Return [%]: 7550.3
-Win Rate [%]: 7.1
-Best Trade [%]: 2670799.5
-Worst Trade [%]: -2686.5
-Avg. Trade [%]: 189935.6
-Sharpe Ratio: 0.64
+# Trades: 5
+Equity Final [$]: 112135.17
+Return [%]: 12.1
+Win Rate [%]: 20.0
+Best Trade [%]: 4567.6
+Worst Trade [%]: -776.9
+Avg. Trade [%]: 407.3
+Sharpe Ratio: 0.26
 
 AMZN_BreakoutV2_As_Simple:
-# Trades: 14
-Equity Final [$]: 7650338.11
-Return [%]: 7550.3
-Win Rate [%]: 7.1
-Best Trade [%]: 2670799.5
-Worst Trade [%]: -2686.5
-Avg. Trade [%]: 189935.6
-Sharpe Ratio: 0.64
+# Trades: 5
+Equity Final [$]: 112135.17
+Return [%]: 12.1
+Win Rate [%]: 20.0
+Best Trade [%]: 4567.6
+Worst Trade [%]: -776.9
+Avg. Trade [%]: 407.3
+Sharpe Ratio: 0.26
 
 AMZN_BreakoutV2_TrailingStop:
-# Trades: 163
-Equity Final [$]: 185467.06
-Return [%]: 85.5
-Win Rate [%]: 44.8
-Best Trade [%]: 5217.3
-Worst Trade [%]: -1529.9
-Avg. Trade [%]: 66.3
-Sharpe Ratio: 0.22
+# Trades: 25
+Equity Final [$]: 124899.43
+Return [%]: 24.9
+Win Rate [%]: 48.0
+Best Trade [%]: 1654.6
+Worst Trade [%]: -759.7
+Avg. Trade [%]: 109.2
+Sharpe Ratio: 0.40
 
 AMZN_BreakoutV2_Full_Features:
-# Trades: 88
-Equity Final [$]: 254563.95
-Return [%]: 154.6
-Win Rate [%]: 22.7
-Best Trade [%]: 4682.6
-Worst Trade [%]: -2686.5
-Avg. Trade [%]: -221.4
-Sharpe Ratio: 0.33
+# Trades: 14
+Equity Final [$]: 126973.85
+Return [%]: 27.0
+Win Rate [%]: 21.4
+Best Trade [%]: 2851.4
+Worst Trade [%]: -762.2
+Avg. Trade [%]: -68.3
+Sharpe Ratio: 0.53
 
 AMZN_BreakoutV2_20_Trailingstop:
-# Trades: 39
-Equity Final [$]: 1505961.91
-Return [%]: 1406.0
-Win Rate [%]: 25.6
-Best Trade [%]: 13058.7
-Worst Trade [%]: -3181.0
-Avg. Trade [%]: 296.1
-Sharpe Ratio: 0.54
+# Trades: 6
+Equity Final [$]: 121927.43
+Return [%]: 21.9
+Win Rate [%]: 33.3
+Best Trade [%]: 2850.7
+Worst Trade [%]: -2292.6
+Avg. Trade [%]: -295.9
+Sharpe Ratio: 0.33
 
 AMZN_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 6563113.99
-Return [%]: 6463.1
+Equity Final [$]: 151280.42
+Return [%]: 51.3
 Win Rate [%]: 100.0
-Best Trade [%]: 646311.4
-Worst Trade [%]: 646311.4
-Avg. Trade [%]: 646311.4
-Sharpe Ratio: 0.58
+Best Trade [%]: 5128.0
+Worst Trade [%]: 5128.0
+Avg. Trade [%]: 5128.0
+Sharpe Ratio: 0.46
 
 AMZN_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 35867100.30
-Return [%]: 35767.1
-Win Rate [%]: 100.0
-Best Trade [%]: 3576710.0
-Worst Trade [%]: 3576710.0
-Avg. Trade [%]: 3576710.0
-Sharpe Ratio: 0.80
+Equity Final [$]: 93047.18
+Return [%]: -7.0
+Win Rate [%]: 0.0
+Best Trade [%]: -695.3
+Worst Trade [%]: -695.3
+Avg. Trade [%]: -695.3
+Sharpe Ratio: 0.10
 
 AMZN_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 23530037.01
-Return [%]: 23430.0
-Win Rate [%]: 100.0
-Best Trade [%]: 2343003.7
-Worst Trade [%]: 2343003.7
-Avg. Trade [%]: 2343003.7
-Sharpe Ratio: 0.77
+Equity Final [$]: 86551.34
+Return [%]: -13.4
+Win Rate [%]: 0.0
+Best Trade [%]: -1344.9
+Worst Trade [%]: -1344.9
+Avg. Trade [%]: -1344.9
+Sharpe Ratio: 0.04
 
 AMZN_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 148
-Equity Final [$]: 305670.35
-Return [%]: 205.7
-Win Rate [%]: 45.3
-Best Trade [%]: 4273.9
-Worst Trade [%]: -1728.4
-Avg. Trade [%]: 249.4
-Sharpe Ratio: 0.70
+# Trades: 22
+Equity Final [$]: 103564.26
+Return [%]: 3.6
+Win Rate [%]: 36.4
+Best Trade [%]: 2242.0
+Worst Trade [%]: -1203.6
+Avg. Trade [%]: -9.6
+Sharpe Ratio: 0.19
 
 AMZN_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 9
-Equity Final [$]: 6870550.68
-Return [%]: 6770.6
-Win Rate [%]: 33.3
-Best Trade [%]: 279203.7
-Worst Trade [%]: -4296.2
-Avg. Trade [%]: 31138.8
-Sharpe Ratio: 0.63
+# Trades: 2
+Equity Final [$]: 71848.25
+Return [%]: -28.2
+Win Rate [%]: 50.0
+Best Trade [%]: 2091.1
+Worst Trade [%]: -3537.8
+Avg. Trade [%]: -723.3
+Sharpe Ratio: -0.10
 
 GOOGL_Breakout_Simple:
-# Trades: 1
-Equity Final [$]: 6527919.98
-Return [%]: 6427.9
-Win Rate [%]: 100.0
-Best Trade [%]: 642792.0
-Worst Trade [%]: 642792.0
-Avg. Trade [%]: 642792.0
-Sharpe Ratio: 0.83
+# Trades: 2
+Equity Final [$]: 207816.43
+Return [%]: 107.8
+Win Rate [%]: 50.0
+Best Trade [%]: 12081.4
+Worst Trade [%]: -588.6
+Avg. Trade [%]: 5746.4
+Sharpe Ratio: 0.76
 
 GOOGL_BreakoutV2_As_Simple:
-# Trades: 1
-Equity Final [$]: 6527919.98
-Return [%]: 6427.9
-Win Rate [%]: 100.0
-Best Trade [%]: 642792.0
-Worst Trade [%]: 642792.0
-Avg. Trade [%]: 642792.0
-Sharpe Ratio: 0.83
+# Trades: 2
+Equity Final [$]: 207816.43
+Return [%]: 107.8
+Win Rate [%]: 50.0
+Best Trade [%]: 12081.4
+Worst Trade [%]: -588.6
+Avg. Trade [%]: 5746.4
+Sharpe Ratio: 0.76
 
 GOOGL_BreakoutV2_TrailingStop:
-# Trades: 101
-Equity Final [$]: 776059.40
-Return [%]: 676.1
-Win Rate [%]: 54.5
-Best Trade [%]: 4112.1
+# Trades: 25
+Equity Final [$]: 75646.38
+Return [%]: -24.4
+Win Rate [%]: 36.0
+Best Trade [%]: 1548.9
 Worst Trade [%]: -1063.0
-Avg. Trade [%]: 240.2
-Sharpe Ratio: 0.68
+Avg. Trade [%]: -94.1
+Sharpe Ratio: -0.30
 
 GOOGL_BreakoutV2_Full_Features:
-# Trades: 53
-Equity Final [$]: 331019.21
-Return [%]: 231.0
-Win Rate [%]: 26.4
+# Trades: 12
+Equity Final [$]: 148915.13
+Return [%]: 48.9
+Win Rate [%]: 33.3
 Best Trade [%]: 4951.7
-Worst Trade [%]: -1174.0
-Avg. Trade [%]: -62.7
-Sharpe Ratio: 0.48
+Worst Trade [%]: -1284.0
+Avg. Trade [%]: -99.9
+Sharpe Ratio: 0.67
 
 GOOGL_BreakoutV2_20_Trailingstop:
-# Trades: 15
-Equity Final [$]: 2192208.58
-Return [%]: 2092.2
-Win Rate [%]: 46.7
-Best Trade [%]: 22830.0
-Worst Trade [%]: -2531.6
-Avg. Trade [%]: 2851.0
-Sharpe Ratio: 0.78
+# Trades: 5
+Equity Final [$]: 180760.84
+Return [%]: 80.8
+Win Rate [%]: 40.0
+Best Trade [%]: 6488.5
+Worst Trade [%]: -2014.7
+Avg. Trade [%]: 548.6
+Sharpe Ratio: 0.79
 
 GOOGL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 4190609.72
-Return [%]: 4090.6
+Equity Final [$]: 188439.25
+Return [%]: 88.4
 Win Rate [%]: 100.0
-Best Trade [%]: 409061.0
-Worst Trade [%]: 409061.0
-Avg. Trade [%]: 409061.0
-Sharpe Ratio: 0.76
+Best Trade [%]: 8843.9
+Worst Trade [%]: 8843.9
+Avg. Trade [%]: 8843.9
+Sharpe Ratio: 0.64
 
 GOOGL_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2043115.90
-Return [%]: 1943.1
+Equity Final [$]: 105274.66
+Return [%]: 5.3
 Win Rate [%]: 100.0
-Best Trade [%]: 194311.6
-Worst Trade [%]: 194311.6
-Avg. Trade [%]: 194311.6
-Sharpe Ratio: 0.67
+Best Trade [%]: 527.5
+Worst Trade [%]: 527.5
+Avg. Trade [%]: 527.5
+Sharpe Ratio: 0.17
 
 GOOGL_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2199814.35
-Return [%]: 2099.8
+Equity Final [$]: 148600.85
+Return [%]: 48.6
 Win Rate [%]: 100.0
-Best Trade [%]: 209981.4
-Worst Trade [%]: 209981.4
-Avg. Trade [%]: 209981.4
-Sharpe Ratio: 0.67
+Best Trade [%]: 4860.1
+Worst Trade [%]: 4860.1
+Avg. Trade [%]: 4860.1
+Sharpe Ratio: 0.50
 
 GOOGL_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 83
-Equity Final [$]: 239518.25
-Return [%]: 139.5
-Win Rate [%]: 41.0
-Best Trade [%]: 3143.3
-Worst Trade [%]: -1517.3
-Avg. Trade [%]: 302.7
-Sharpe Ratio: 0.81
+# Trades: 18
+Equity Final [$]: 116038.00
+Return [%]: 16.0
+Win Rate [%]: 44.4
+Best Trade [%]: 2051.4
+Worst Trade [%]: -1130.8
+Avg. Trade [%]: 225.2
+Sharpe Ratio: 0.64
 
 GOOGL_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 2
-Equity Final [$]: 2258143.69
-Return [%]: 2158.1
+# Trades: 1
+Equity Final [$]: 146782.68
+Return [%]: 46.8
 Win Rate [%]: 100.0
-Best Trade [%]: 146811.3
-Worst Trade [%]: 2669.8
-Avg. Trade [%]: 74740.5
-Sharpe Ratio: 0.68
+Best Trade [%]: 4196.9
+Worst Trade [%]: 4196.9
+Avg. Trade [%]: 4196.9
+Sharpe Ratio: 0.48
 
 META_Breakout_Simple:
 # Trades: 4
-Equity Final [$]: 1957543.21
-Return [%]: 1857.5
+Equity Final [$]: 238999.91
+Return [%]: 139.0
 Win Rate [%]: 25.0
-Best Trade [%]: 222927.2
-Worst Trade [%]: -583.9
-Avg. Trade [%]: 55309.5
-Sharpe Ratio: 0.82
+Best Trade [%]: 18375.8
+Worst Trade [%]: -623.9
+Avg. Trade [%]: 4176.9
+Sharpe Ratio: 0.76
 
 META_BreakoutV2_As_Simple:
 # Trades: 4
-Equity Final [$]: 1957543.21
-Return [%]: 1857.5
+Equity Final [$]: 238999.91
+Return [%]: 139.0
 Win Rate [%]: 25.0
-Best Trade [%]: 222927.2
-Worst Trade [%]: -583.9
-Avg. Trade [%]: 55309.5
-Sharpe Ratio: 0.82
+Best Trade [%]: 18375.8
+Worst Trade [%]: -623.9
+Avg. Trade [%]: 4176.9
+Sharpe Ratio: 0.76
 
 META_BreakoutV2_TrailingStop:
-# Trades: 79
-Equity Final [$]: 203673.03
-Return [%]: 103.7
-Win Rate [%]: 38.0
+# Trades: 28
+Equity Final [$]: 123646.30
+Return [%]: 23.6
+Win Rate [%]: 39.3
 Best Trade [%]: 4953.5
-Worst Trade [%]: -1391.0
-Avg. Trade [%]: 137.6
-Sharpe Ratio: 0.37
+Worst Trade [%]: -1079.9
+Avg. Trade [%]: 133.1
+Sharpe Ratio: 0.35
 
 META_BreakoutV2_Full_Features:
-# Trades: 34
-Equity Final [$]: 304584.37
-Return [%]: 204.6
-Win Rate [%]: 35.3
-Best Trade [%]: 4455.7
-Worst Trade [%]: -1091.6
-Avg. Trade [%]: 77.5
-Sharpe Ratio: 0.57
+# Trades: 13
+Equity Final [$]: 169183.71
+Return [%]: 69.2
+Win Rate [%]: 38.5
+Best Trade [%]: 2633.5
+Worst Trade [%]: -1063.4
+Avg. Trade [%]: 133.6
+Sharpe Ratio: 0.77
 
 META_BreakoutV2_20_Trailingstop:
-# Trades: 12
-Equity Final [$]: 1689284.69
-Return [%]: 1589.3
-Win Rate [%]: 33.3
-Best Trade [%]: 33054.7
+# Trades: 5
+Equity Final [$]: 362728.24
+Return [%]: 262.7
+Win Rate [%]: 40.0
+Best Trade [%]: 15677.7
 Worst Trade [%]: -3131.9
-Avg. Trade [%]: 3714.5
-Sharpe Ratio: 0.93
+Avg. Trade [%]: 2955.8
+Sharpe Ratio: 1.22
 
 META_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 3054546.59
-Return [%]: 2954.5
+Equity Final [$]: 165262.86
+Return [%]: 65.3
 Win Rate [%]: 100.0
-Best Trade [%]: 295454.7
-Worst Trade [%]: 295454.7
-Avg. Trade [%]: 295454.7
-Sharpe Ratio: 0.90
+Best Trade [%]: 6526.3
+Worst Trade [%]: 6526.3
+Avg. Trade [%]: 6526.3
+Sharpe Ratio: 0.51
 
 META_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2329271.84
-Return [%]: 2229.3
+Equity Final [$]: 111353.69
+Return [%]: 11.4
 Win Rate [%]: 100.0
-Best Trade [%]: 222927.2
-Worst Trade [%]: 222927.2
-Avg. Trade [%]: 222927.2
-Sharpe Ratio: 0.87
+Best Trade [%]: 1135.4
+Worst Trade [%]: 1135.4
+Avg. Trade [%]: 1135.4
+Sharpe Ratio: 0.27
 
 META_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 1727294.63
-Return [%]: 1627.3
+Equity Final [$]: 107420.10
+Return [%]: 7.4
 Win Rate [%]: 100.0
-Best Trade [%]: 162729.5
-Worst Trade [%]: 162729.5
-Avg. Trade [%]: 162729.5
-Sharpe Ratio: 0.82
+Best Trade [%]: 742.0
+Worst Trade [%]: 742.0
+Avg. Trade [%]: 742.0
+Sharpe Ratio: 0.25
 
 META_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 62
-Equity Final [$]: 161962.47
-Return [%]: 62.0
-Win Rate [%]: 43.5
-Best Trade [%]: 4192.5
+# Trades: 25
+Equity Final [$]: 108492.54
+Return [%]: 8.5
+Win Rate [%]: 40.0
+Best Trade [%]: 2793.5
 Worst Trade [%]: -2877.6
-Avg. Trade [%]: 220.7
-Sharpe Ratio: 0.62
+Avg. Trade [%]: 67.1
+Sharpe Ratio: 0.33
 
 META_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
 # Trades: 3
-Equity Final [$]: 2273030.67
-Return [%]: 2173.0
-Win Rate [%]: 66.7
-Best Trade [%]: 46921.9
+Equity Final [$]: 118049.53
+Return [%]: 18.0
+Win Rate [%]: 33.3
+Best Trade [%]: 8333.5
 Worst Trade [%]: -5190.3
-Avg. Trade [%]: 20824.0
-Sharpe Ratio: 0.91
+Avg. Trade [%]: -37.2
+Sharpe Ratio: 0.30
 
 MSFT_Breakout_Simple:
-# Trades: 15
-Equity Final [$]: 1143589.98
-Return [%]: 1043.6
-Win Rate [%]: 6.7
-Best Trade [%]: 302928.3
-Worst Trade [%]: -1523.5
-Avg. Trade [%]: 19551.8
-Sharpe Ratio: 0.52
+# Trades: 2
+Equity Final [$]: 214180.98
+Return [%]: 114.2
+Win Rate [%]: 50.0
+Best Trade [%]: 13547.3
+Worst Trade [%]: -904.2
+Avg. Trade [%]: 6321.5
+Sharpe Ratio: 0.82
 
 MSFT_BreakoutV2_As_Simple:
-# Trades: 15
-Equity Final [$]: 1143589.98
-Return [%]: 1043.6
-Win Rate [%]: 6.7
-Best Trade [%]: 302928.3
-Worst Trade [%]: -1523.5
-Avg. Trade [%]: 19551.8
-Sharpe Ratio: 0.52
+# Trades: 2
+Equity Final [$]: 214180.98
+Return [%]: 114.2
+Win Rate [%]: 50.0
+Best Trade [%]: 13547.3
+Worst Trade [%]: -904.2
+Avg. Trade [%]: 6321.5
+Sharpe Ratio: 0.82
 
 MSFT_BreakoutV2_TrailingStop:
-# Trades: 110
-Equity Final [$]: 246375.97
-Return [%]: 146.4
-Win Rate [%]: 46.4
-Best Trade [%]: 2492.9
-Worst Trade [%]: -1218.2
-Avg. Trade [%]: 105.3
-Sharpe Ratio: 0.31
+# Trades: 23
+Equity Final [$]: 125435.98
+Return [%]: 25.4
+Win Rate [%]: 56.5
+Best Trade [%]: 1317.6
+Worst Trade [%]: -771.6
+Avg. Trade [%]: 112.4
+Sharpe Ratio: 0.44
 
 MSFT_BreakoutV2_Full_Features:
-# Trades: 59
-Equity Final [$]: 226841.47
-Return [%]: 126.8
-Win Rate [%]: 22.0
-Best Trade [%]: 4818.7
-Worst Trade [%]: -1230.7
-Avg. Trade [%]: -137.8
-Sharpe Ratio: 0.36
+# Trades: 11
+Equity Final [$]: 137662.97
+Return [%]: 37.7
+Win Rate [%]: 36.4
+Best Trade [%]: 2719.4
+Worst Trade [%]: -1219.2
+Avg. Trade [%]: 83.8
+Sharpe Ratio: 0.66
 
 MSFT_BreakoutV2_20_Trailingstop:
-# Trades: 17
-Equity Final [$]: 1182958.60
-Return [%]: 1083.0
-Win Rate [%]: 29.4
-Best Trade [%]: 54242.1
-Worst Trade [%]: -2040.9
-Avg. Trade [%]: 2954.3
-Sharpe Ratio: 0.62
+# Trades: 5
+Equity Final [$]: 184137.60
+Return [%]: 84.1
+Win Rate [%]: 40.0
+Best Trade [%]: 4949.7
+Worst Trade [%]: -2013.9
+Avg. Trade [%]: 659.6
+Sharpe Ratio: 0.86
 
 MSFT_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 1295716.50
-Return [%]: 1195.7
+Equity Final [$]: 249289.96
+Return [%]: 149.3
 Win Rate [%]: 100.0
-Best Trade [%]: 119571.7
-Worst Trade [%]: 119571.7
-Avg. Trade [%]: 119571.7
-Sharpe Ratio: 0.49
+Best Trade [%]: 14929.0
+Worst Trade [%]: 14929.0
+Avg. Trade [%]: 14929.0
+Sharpe Ratio: 0.96
 
 MSFT_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2110267.23
-Return [%]: 2010.3
+Equity Final [$]: 129718.90
+Return [%]: 29.7
 Win Rate [%]: 100.0
-Best Trade [%]: 201026.7
-Worst Trade [%]: 201026.7
-Avg. Trade [%]: 201026.7
-Sharpe Ratio: 0.58
+Best Trade [%]: 2971.9
+Worst Trade [%]: 2971.9
+Avg. Trade [%]: 2971.9
+Sharpe Ratio: 0.42
 
 MSFT_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2386134.36
-Return [%]: 2286.1
+Equity Final [$]: 152123.05
+Return [%]: 52.1
 Win Rate [%]: 100.0
-Best Trade [%]: 228613.4
-Worst Trade [%]: 228613.4
-Avg. Trade [%]: 228613.4
-Sharpe Ratio: 0.64
+Best Trade [%]: 5212.3
+Worst Trade [%]: 5212.3
+Avg. Trade [%]: 5212.3
+Sharpe Ratio: 0.57
 
 MSFT_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 103
-Equity Final [$]: 159966.88
-Return [%]: 60.0
-Win Rate [%]: 35.9
-Best Trade [%]: 2417.3
-Worst Trade [%]: -1270.2
-Avg. Trade [%]: 78.9
-Sharpe Ratio: 0.40
+# Trades: 18
+Equity Final [$]: 109980.66
+Return [%]: 10.0
+Win Rate [%]: 33.3
+Best Trade [%]: 2159.8
+Worst Trade [%]: -1133.8
+Avg. Trade [%]: 20.2
+Sharpe Ratio: 0.47
 
 MSFT_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 3
-Equity Final [$]: 1820749.49
-Return [%]: 1720.7
-Win Rate [%]: 33.3
-Best Trade [%]: 205779.0
-Worst Trade [%]: -4692.1
-Avg. Trade [%]: 65766.2
-Sharpe Ratio: 0.65
+# Trades: 1
+Equity Final [$]: 202793.80
+Return [%]: 102.8
+Win Rate [%]: 100.0
+Best Trade [%]: 9377.2
+Worst Trade [%]: 9377.2
+Avg. Trade [%]: 9377.2
+Sharpe Ratio: 0.80
 
 NFLX_Breakout_Simple:
-# Trades: 5
-Equity Final [$]: 56631926.95
-Return [%]: 56531.9
-Win Rate [%]: 20.0
-Best Trade [%]: 8842540.7
-Worst Trade [%]: -1467.9
-Avg. Trade [%]: 1767665.7
-Sharpe Ratio: 0.80
+# Trades: 4
+Equity Final [$]: 196838.20
+Return [%]: 96.8
+Win Rate [%]: 25.0
+Best Trade [%]: 14147.2
+Worst Trade [%]: -763.8
+Avg. Trade [%]: 3043.1
+Sharpe Ratio: 0.63
 
 NFLX_BreakoutV2_As_Simple:
-# Trades: 5
-Equity Final [$]: 56631926.95
-Return [%]: 56531.9
-Win Rate [%]: 20.0
-Best Trade [%]: 8842540.7
-Worst Trade [%]: -1467.9
-Avg. Trade [%]: 1767665.7
-Sharpe Ratio: 0.80
+# Trades: 4
+Equity Final [$]: 196838.20
+Return [%]: 96.8
+Win Rate [%]: 25.0
+Best Trade [%]: 14147.2
+Worst Trade [%]: -763.8
+Avg. Trade [%]: 3043.1
+Sharpe Ratio: 0.63
 
 NFLX_BreakoutV2_TrailingStop:
-# Trades: 169
-Equity Final [$]: 355980.91
-Return [%]: 256.0
-Win Rate [%]: 43.8
-Best Trade [%]: 4387.7
-Worst Trade [%]: -1467.9
-Avg. Trade [%]: 104.6
-Sharpe Ratio: 0.36
+# Trades: 30
+Equity Final [$]: 79375.27
+Return [%]: -20.6
+Win Rate [%]: 36.7
+Best Trade [%]: 1202.8
+Worst Trade [%]: -812.2
+Avg. Trade [%]: -63.4
+Sharpe Ratio: -0.24
 
 NFLX_BreakoutV2_Full_Features:
-# Trades: 104
-Equity Final [$]: 227426.39
-Return [%]: 127.4
-Win Rate [%]: 25.0
-Best Trade [%]: 5030.0
-Worst Trade [%]: -2629.0
-Avg. Trade [%]: -268.5
-Sharpe Ratio: 0.30
+# Trades: 17
+Equity Final [$]: 99859.80
+Return [%]: -0.1
+Win Rate [%]: 29.4
+Best Trade [%]: 678.4
+Worst Trade [%]: -1080.0
+Avg. Trade [%]: -356.5
+Sharpe Ratio: 0.06
 
 NFLX_BreakoutV2_20_Trailingstop:
-# Trades: 40
-Equity Final [$]: 4868661.20
-Return [%]: 4768.7
-Win Rate [%]: 35.0
-Best Trade [%]: 36810.1
-Worst Trade [%]: -4200.4
-Avg. Trade [%]: 1300.2
-Sharpe Ratio: 0.67
+# Trades: 5
+Equity Final [$]: 147838.93
+Return [%]: 47.8
+Win Rate [%]: 60.0
+Best Trade [%]: 2162.7
+Worst Trade [%]: -1901.6
+Avg. Trade [%]: 518.8
+Sharpe Ratio: 0.47
 
 NFLX_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 76772356.50
-Return [%]: 76672.4
+Equity Final [$]: 128383.09
+Return [%]: 28.4
 Win Rate [%]: 100.0
-Best Trade [%]: 7667235.6
-Worst Trade [%]: 7667235.6
-Avg. Trade [%]: 7667235.6
-Sharpe Ratio: 0.81
+Best Trade [%]: 2838.3
+Worst Trade [%]: 2838.3
+Avg. Trade [%]: 2838.3
+Sharpe Ratio: 0.38
 
 NFLX_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 40274829.84
-Return [%]: 40174.8
-Win Rate [%]: 100.0
-Best Trade [%]: 4017483.0
-Worst Trade [%]: 4017483.0
-Avg. Trade [%]: 4017483.0
-Sharpe Ratio: 0.80
+Equity Final [$]: 97463.72
+Return [%]: -2.5
+Win Rate [%]: 0.0
+Best Trade [%]: -253.6
+Worst Trade [%]: -253.6
+Avg. Trade [%]: -253.6
+Sharpe Ratio: 0.20
 
 NFLX_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 50667278.43
-Return [%]: 50567.3
-Win Rate [%]: 100.0
-Best Trade [%]: 5056727.8
-Worst Trade [%]: 5056727.8
-Avg. Trade [%]: 5056727.8
-Sharpe Ratio: 0.80
+Equity Final [$]: 83037.14
+Return [%]: -17.0
+Win Rate [%]: 0.0
+Best Trade [%]: -1696.3
+Worst Trade [%]: -1696.3
+Avg. Trade [%]: -1696.3
+Sharpe Ratio: 0.11
 
 NFLX_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 159
-Equity Final [$]: 358262.66
-Return [%]: 258.3
-Win Rate [%]: 49.1
-Best Trade [%]: 6948.6
-Worst Trade [%]: -4090.6
-Avg. Trade [%]: 361.6
-Sharpe Ratio: 0.75
+# Trades: 22
+Equity Final [$]: 118319.65
+Return [%]: 18.3
+Win Rate [%]: 45.5
+Best Trade [%]: 2642.1
+Worst Trade [%]: -1260.6
+Avg. Trade [%]: 375.3
+Sharpe Ratio: 0.66
 
 NFLX_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 10
-Equity Final [$]: 58329860.11
-Return [%]: 58229.9
-Win Rate [%]: 40.0
-Best Trade [%]: 202347.4
-Worst Trade [%]: -5067.0
-Avg. Trade [%]: 25357.0
-Sharpe Ratio: 0.84
+# Trades: 3
+Equity Final [$]: 118214.11
+Return [%]: 18.2
+Win Rate [%]: 33.3
+Best Trade [%]: 9194.1
+Worst Trade [%]: -4923.5
+Avg. Trade [%]: 356.1
+Sharpe Ratio: 0.29
 
 NVDA_Breakout_Simple:
-# Trades: 4
-Equity Final [$]: 88477594.66
-Return [%]: 88377.6
-Win Rate [%]: 25.0
-Best Trade [%]: 13267067.2
-Worst Trade [%]: -2167.8
-Avg. Trade [%]: 3315838.4
-Sharpe Ratio: 0.76
+# Trades: 3
+Equity Final [$]: 577842.29
+Return [%]: 477.8
+Win Rate [%]: 33.3
+Best Trade [%]: 55189.5
+Worst Trade [%]: -661.0
+Avg. Trade [%]: 18006.6
+Sharpe Ratio: 1.12
 
 NVDA_BreakoutV2_As_Simple:
-# Trades: 4
-Equity Final [$]: 88477594.66
-Return [%]: 88377.6
-Win Rate [%]: 25.0
-Best Trade [%]: 13267067.2
-Worst Trade [%]: -2167.8
-Avg. Trade [%]: 3315838.4
-Sharpe Ratio: 0.76
+# Trades: 3
+Equity Final [$]: 577842.29
+Return [%]: 477.8
+Win Rate [%]: 33.3
+Best Trade [%]: 55189.5
+Worst Trade [%]: -661.0
+Avg. Trade [%]: 18006.6
+Sharpe Ratio: 1.12
 
 NVDA_BreakoutV2_TrailingStop:
-# Trades: 194
-Equity Final [$]: 594785.96
-Return [%]: 494.8
-Win Rate [%]: 43.8
-Best Trade [%]: 4551.9
-Worst Trade [%]: -1382.5
-Avg. Trade [%]: 125.2
-Sharpe Ratio: 0.42
+# Trades: 36
+Equity Final [$]: 131409.11
+Return [%]: 31.4
+Win Rate [%]: 33.3
+Best Trade [%]: 3111.2
+Worst Trade [%]: -670.0
+Avg. Trade [%]: 113.8
+Sharpe Ratio: 0.40
 
 NVDA_BreakoutV2_Full_Features:
-# Trades: 94
-Equity Final [$]: 5593526.46
-Return [%]: 5493.5
-Win Rate [%]: 28.7
-Best Trade [%]: 21645.1
-Worst Trade [%]: -2621.5
-Avg. Trade [%]: 296.3
-Sharpe Ratio: 0.90
+# Trades: 17
+Equity Final [$]: 209842.52
+Return [%]: 109.8
+Win Rate [%]: 41.2
+Best Trade [%]: 5761.8
+Worst Trade [%]: -1230.6
+Avg. Trade [%]: 298.8
+Sharpe Ratio: 0.92
 
 NVDA_BreakoutV2_20_Trailingstop:
-# Trades: 47
-Equity Final [$]: 67424628.34
-Return [%]: 67324.6
-Win Rate [%]: 36.2
-Best Trade [%]: 27400.9
-Worst Trade [%]: -2581.4
-Avg. Trade [%]: 1488.8
-Sharpe Ratio: 0.92
+# Trades: 7
+Equity Final [$]: 476825.59
+Return [%]: 376.8
+Win Rate [%]: 42.9
+Best Trade [%]: 14305.5
+Worst Trade [%]: -1523.6
+Avg. Trade [%]: 2917.8
+Sharpe Ratio: 1.23
 
 NVDA_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 146115735.58
-Return [%]: 146015.7
+Equity Final [$]: 804685.92
+Return [%]: 704.7
 Win Rate [%]: 100.0
-Best Trade [%]: 14601573.6
-Worst Trade [%]: 14601573.6
-Avg. Trade [%]: 14601573.6
-Sharpe Ratio: 0.79
+Best Trade [%]: 70468.6
+Worst Trade [%]: 70468.6
+Avg. Trade [%]: 70468.6
+Sharpe Ratio: 1.24
 
 NVDA_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 67273614.10
-Return [%]: 67173.6
+Equity Final [$]: 215826.67
+Return [%]: 115.8
 Win Rate [%]: 100.0
-Best Trade [%]: 6717361.4
-Worst Trade [%]: 6717361.4
-Avg. Trade [%]: 6717361.4
-Sharpe Ratio: 0.76
+Best Trade [%]: 11582.7
+Worst Trade [%]: 11582.7
+Avg. Trade [%]: 11582.7
+Sharpe Ratio: 0.70
 
 NVDA_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 41376478.17
-Return [%]: 41276.5
+Equity Final [$]: 295719.13
+Return [%]: 195.7
 Win Rate [%]: 100.0
-Best Trade [%]: 4127647.8
-Worst Trade [%]: 4127647.8
-Avg. Trade [%]: 4127647.8
-Sharpe Ratio: 0.72
+Best Trade [%]: 19571.9
+Worst Trade [%]: 19571.9
+Avg. Trade [%]: 19571.9
+Sharpe Ratio: 0.84
 
 NVDA_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 173
-Equity Final [$]: 586777.51
-Return [%]: 486.8
-Win Rate [%]: 47.4
-Best Trade [%]: 5541.8
-Worst Trade [%]: -1590.9
-Avg. Trade [%]: 409.5
-Sharpe Ratio: 0.98
+# Trades: 27
+Equity Final [$]: 134891.48
+Return [%]: 34.9
+Win Rate [%]: 48.1
+Best Trade [%]: 2634.4
+Worst Trade [%]: -1315.6
+Avg. Trade [%]: 493.4
+Sharpe Ratio: 1.14
 
 NVDA_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 15
-Equity Final [$]: 7042872.07
-Return [%]: 6942.9
-Win Rate [%]: 33.3
-Best Trade [%]: 80645.2
-Worst Trade [%]: -5366.6
-Avg. Trade [%]: 8788.9
-Sharpe Ratio: 0.62
+# Trades: 2
+Equity Final [$]: 364093.69
+Return [%]: 264.1
+Win Rate [%]: 100.0
+Best Trade [%]: 8470.2
+Worst Trade [%]: 6649.0
+Avg. Trade [%]: 7559.6
+Sharpe Ratio: 0.99
 
 PYPL_Breakout_Simple:
-# Trades: 5
-Equity Final [$]: 179649.41
-Return [%]: 79.6
-Win Rate [%]: 20.0
-Best Trade [%]: 12393.2
-Worst Trade [%]: -558.3
-Avg. Trade [%]: 2049.9
-Sharpe Ratio: 0.35
+# Trades: 9
+Equity Final [$]: 62325.74
+Return [%]: -37.7
+Win Rate [%]: 11.1
+Best Trade [%]: 542.5
+Worst Trade [%]: -867.8
+Avg. Trade [%]: -504.5
+Sharpe Ratio: -0.15
 
 PYPL_BreakoutV2_As_Simple:
-# Trades: 5
-Equity Final [$]: 179649.41
-Return [%]: 79.6
-Win Rate [%]: 20.0
-Best Trade [%]: 12393.2
-Worst Trade [%]: -558.3
-Avg. Trade [%]: 2049.9
-Sharpe Ratio: 0.35
+# Trades: 9
+Equity Final [$]: 62325.74
+Return [%]: -37.7
+Win Rate [%]: 11.1
+Best Trade [%]: 542.5
+Worst Trade [%]: -867.8
+Avg. Trade [%]: -504.5
+Sharpe Ratio: -0.15
 
 PYPL_BreakoutV2_TrailingStop:
-# Trades: 57
-Equity Final [$]: 107002.59
-Return [%]: 7.0
-Win Rate [%]: 38.6
-Best Trade [%]: 2110.5
+# Trades: 24
+Equity Final [$]: 127702.53
+Return [%]: 27.7
+Win Rate [%]: 45.8
+Best Trade [%]: 1811.0
 Worst Trade [%]: -818.0
-Avg. Trade [%]: 32.1
-Sharpe Ratio: 0.13
+Avg. Trade [%]: 121.4
+Sharpe Ratio: 0.41
 
 PYPL_BreakoutV2_Full_Features:
-# Trades: 31
-Equity Final [$]: 207374.91
-Return [%]: 107.4
-Win Rate [%]: 22.6
-Best Trade [%]: 4866.7
+# Trades: 14
+Equity Final [$]: 148709.46
+Return [%]: 48.7
+Win Rate [%]: 28.6
+Best Trade [%]: 4206.2
 Worst Trade [%]: -1477.4
-Avg. Trade [%]: -93.4
-Sharpe Ratio: 0.64
+Avg. Trade [%]: -4.0
+Sharpe Ratio: 0.75
 
 PYPL_BreakoutV2_20_Trailingstop:
-# Trades: 10
-Equity Final [$]: 365415.59
-Return [%]: 265.4
-Win Rate [%]: 30.0
-Best Trade [%]: 12730.5
+# Trades: 9
+Equity Final [$]: 127281.58
+Return [%]: 27.3
+Win Rate [%]: 22.2
+Best Trade [%]: 8264.4
 Worst Trade [%]: -2009.8
-Avg. Trade [%]: 1248.3
-Sharpe Ratio: 0.72
+Avg. Trade [%]: -300.2
+Sharpe Ratio: 0.38
 
 PYPL_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 220578.37
-Return [%]: 120.6
-Win Rate [%]: 100.0
-Best Trade [%]: 12057.8
-Worst Trade [%]: 12057.8
-Avg. Trade [%]: 12057.8
-Sharpe Ratio: 0.41
+Equity Final [$]: 52707.92
+Return [%]: -47.3
+Win Rate [%]: 0.0
+Best Trade [%]: -4729.2
+Worst Trade [%]: -4729.2
+Avg. Trade [%]: -4729.2
+Sharpe Ratio: -0.10
 
 PYPL_TwoStdDev_YearlyTrend_LowerBand_Trailing:
-# Trades: 1
-Equity Final [$]: 105979.41
-Return [%]: 6.0
-Win Rate [%]: 100.0
-Best Trade [%]: 597.9
-Worst Trade [%]: 597.9
-Avg. Trade [%]: 597.9
-Sharpe Ratio: 0.19
+# Trades: 0
+Equity Final [$]: 100000.00
+Return [%]: 0.0
+Win Rate [%]: N/A
+Best Trade [%]: N/A
+Worst Trade [%]: N/A
+Avg. Trade [%]: N/A
+Sharpe Ratio: N/A
 
 PYPL_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 193499.43
-Return [%]: 93.5
-Win Rate [%]: 100.0
-Best Trade [%]: 9349.9
-Worst Trade [%]: 9349.9
-Avg. Trade [%]: 9349.9
-Sharpe Ratio: 0.38
+Equity Final [$]: 22708.28
+Return [%]: -77.3
+Win Rate [%]: 0.0
+Best Trade [%]: -7729.2
+Worst Trade [%]: -7729.2
+Avg. Trade [%]: -7729.2
+Sharpe Ratio: -0.77
 
 PYPL_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 50
-Equity Final [$]: 124151.80
-Return [%]: 24.2
-Win Rate [%]: 48.0
+# Trades: 26
+Equity Final [$]: 103009.28
+Return [%]: 3.0
+Win Rate [%]: 46.2
 Best Trade [%]: 3049.0
 Worst Trade [%]: -2459.0
-Avg. Trade [%]: 109.8
-Sharpe Ratio: 0.41
+Avg. Trade [%]: 76.3
+Sharpe Ratio: 0.15
 
 PYPL_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
 # Trades: 3
-Equity Final [$]: 256221.28
-Return [%]: 156.2
-Win Rate [%]: 66.7
-Best Trade [%]: 14167.0
+Equity Final [$]: 70682.55
+Return [%]: -29.3
+Win Rate [%]: 0.0
+Best Trade [%]: -398.7
 Worst Trade [%]: -4366.2
-Avg. Trade [%]: 3626.0
-Sharpe Ratio: 0.49
+Avg. Trade [%]: -2249.6
+Sharpe Ratio: -0.14
 
 QQQ_Breakout_Simple:
-# Trades: 10
-Equity Final [$]: 1364012.40
-Return [%]: 1264.0
-Win Rate [%]: 10.0
-Best Trade [%]: 247801.5
-Worst Trade [%]: -753.1
-Avg. Trade [%]: 24165.8
-Sharpe Ratio: 0.59
+# Trades: 2
+Equity Final [$]: 187195.16
+Return [%]: 87.2
+Win Rate [%]: 50.0
+Best Trade [%]: 9771.2
+Worst Trade [%]: -531.9
+Avg. Trade [%]: 4619.6
+Sharpe Ratio: 0.79
 
 QQQ_BreakoutV2_As_Simple:
-# Trades: 10
-Equity Final [$]: 1364012.40
-Return [%]: 1264.0
-Win Rate [%]: 10.0
-Best Trade [%]: 247801.5
-Worst Trade [%]: -753.1
-Avg. Trade [%]: 24165.8
-Sharpe Ratio: 0.59
+# Trades: 2
+Equity Final [$]: 187195.16
+Return [%]: 87.2
+Win Rate [%]: 50.0
+Best Trade [%]: 9771.2
+Worst Trade [%]: -531.9
+Avg. Trade [%]: 4619.6
+Sharpe Ratio: 0.79
 
 QQQ_BreakoutV2_TrailingStop:
-# Trades: 86
-Equity Final [$]: 405476.50
-Return [%]: 305.5
-Win Rate [%]: 52.3
+# Trades: 18
+Equity Final [$]: 144374.97
+Return [%]: 44.4
+Win Rate [%]: 61.1
 Best Trade [%]: 1871.3
-Worst Trade [%]: -750.0
-Avg. Trade [%]: 183.9
-Sharpe Ratio: 0.50
+Worst Trade [%]: -652.0
+Avg. Trade [%]: 222.7
+Sharpe Ratio: 0.73
 
 QQQ_BreakoutV2_Full_Features:
-# Trades: 44
-Equity Final [$]: 239093.56
-Return [%]: 139.1
-Win Rate [%]: 25.0
-Best Trade [%]: 4050.9
-Worst Trade [%]: -1118.9
-Avg. Trade [%]: -90.1
-Sharpe Ratio: 0.40
+# Trades: 9
+Equity Final [$]: 110224.60
+Return [%]: 10.2
+Win Rate [%]: 33.3
+Best Trade [%]: 1181.5
+Worst Trade [%]: -959.7
+Avg. Trade [%]: -60.1
+Sharpe Ratio: 0.28
 
 QQQ_BreakoutV2_20_Trailingstop:
-# Trades: 15
-Equity Final [$]: 948528.06
-Return [%]: 848.5
-Win Rate [%]: 26.7
-Best Trade [%]: 35719.1
-Worst Trade [%]: -1973.1
-Avg. Trade [%]: 2336.2
-Sharpe Ratio: 0.63
+# Trades: 5
+Equity Final [$]: 152135.54
+Return [%]: 52.1
+Win Rate [%]: 40.0
+Best Trade [%]: 3545.2
+Worst Trade [%]: -2204.7
+Avg. Trade [%]: 165.8
+Sharpe Ratio: 0.72
 
 QQQ_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 659523.48
-Return [%]: 559.5
+Equity Final [$]: 188760.62
+Return [%]: 88.8
 Win Rate [%]: 100.0
-Best Trade [%]: 55952.3
-Worst Trade [%]: 55952.3
-Avg. Trade [%]: 55952.3
-Sharpe Ratio: 0.42
+Best Trade [%]: 8876.1
+Worst Trade [%]: 8876.1
+Avg. Trade [%]: 8876.1
+Sharpe Ratio: 0.72
 
 QQQ_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 2255403.43
-Return [%]: 2155.4
+Equity Final [$]: 114416.28
+Return [%]: 14.4
 Win Rate [%]: 100.0
-Best Trade [%]: 215540.3
-Worst Trade [%]: 215540.3
-Avg. Trade [%]: 215540.3
-Sharpe Ratio: 0.72
+Best Trade [%]: 1441.6
+Worst Trade [%]: 1441.6
+Avg. Trade [%]: 1441.6
+Sharpe Ratio: 0.28
 
 QQQ_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 1996647.22
-Return [%]: 1896.6
+Equity Final [$]: 113085.28
+Return [%]: 13.1
 Win Rate [%]: 100.0
-Best Trade [%]: 189664.7
-Worst Trade [%]: 189664.7
-Avg. Trade [%]: 189664.7
-Sharpe Ratio: 0.70
+Best Trade [%]: 1308.5
+Worst Trade [%]: 1308.5
+Avg. Trade [%]: 1308.5
+Sharpe Ratio: 0.26
 
 QQQ_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 82
-Equity Final [$]: 182137.83
-Return [%]: 82.1
-Win Rate [%]: 35.4
-Best Trade [%]: 2135.7
-Worst Trade [%]: -1181.8
-Avg. Trade [%]: 40.4
-Sharpe Ratio: 0.53
+# Trades: 14
+Equity Final [$]: 118498.43
+Return [%]: 18.5
+Win Rate [%]: 50.0
+Best Trade [%]: 2057.8
+Worst Trade [%]: -1089.9
+Avg. Trade [%]: 354.6
+Sharpe Ratio: 1.03
 
 QQQ_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 5
-Equity Final [$]: 878007.34
-Return [%]: 778.0
-Win Rate [%]: 20.0
-Best Trade [%]: 148367.9
-Worst Trade [%]: -4502.5
-Avg. Trade [%]: 26775.2
-Sharpe Ratio: 0.53
+# Trades: 1
+Equity Final [$]: 146342.51
+Return [%]: 46.3
+Win Rate [%]: 100.0
+Best Trade [%]: 4181.1
+Worst Trade [%]: 4181.1
+Avg. Trade [%]: 4181.1
+Sharpe Ratio: 0.54
 
 TSLA_Breakout_Simple:
-# Trades: 13
-Equity Final [$]: 7588754.86
-Return [%]: 7488.8
-Win Rate [%]: 7.7
-Best Trade [%]: 1977666.8
-Worst Trade [%]: -1825.7
-Avg. Trade [%]: 151422.6
-Sharpe Ratio: 0.82
+# Trades: 2
+Equity Final [$]: 539324.91
+Return [%]: 439.3
+Win Rate [%]: 50.0
+Best Trade [%]: 47257.9
+Worst Trade [%]: -580.8
+Avg. Trade [%]: 23338.5
+Sharpe Ratio: 0.99
 
 TSLA_BreakoutV2_As_Simple:
-# Trades: 13
-Equity Final [$]: 7588754.86
-Return [%]: 7488.8
-Win Rate [%]: 7.7
-Best Trade [%]: 1977666.8
-Worst Trade [%]: -1825.7
-Avg. Trade [%]: 151422.6
-Sharpe Ratio: 0.82
+# Trades: 2
+Equity Final [$]: 539324.91
+Return [%]: 439.3
+Win Rate [%]: 50.0
+Best Trade [%]: 47257.9
+Worst Trade [%]: -580.8
+Avg. Trade [%]: 23338.5
+Sharpe Ratio: 0.99
 
 TSLA_BreakoutV2_TrailingStop:
-# Trades: 109
-Equity Final [$]: 1541513.57
-Return [%]: 1441.5
-Win Rate [%]: 45.9
+# Trades: 32
+Equity Final [$]: 426870.98
+Return [%]: 326.9
+Win Rate [%]: 53.1
 Best Trade [%]: 3933.7
-Worst Trade [%]: -1166.5
-Avg. Trade [%]: 306.0
-Sharpe Ratio: 0.88
+Worst Trade [%]: -946.3
+Avg. Trade [%]: 537.4
+Sharpe Ratio: 1.43
 
 TSLA_BreakoutV2_Full_Features:
-# Trades: 69
-Equity Final [$]: 754091.32
-Return [%]: 654.1
-Win Rate [%]: 29.0
-Best Trade [%]: 13439.7
-Worst Trade [%]: -1499.7
-Avg. Trade [%]: 35.4
-Sharpe Ratio: 0.78
+# Trades: 18
+Equity Final [$]: 326074.59
+Return [%]: 226.1
+Win Rate [%]: 50.0
+Best Trade [%]: 4116.6
+Worst Trade [%]: -1198.4
+Avg. Trade [%]: 454.8
+Sharpe Ratio: 1.31
 
 TSLA_BreakoutV2_20_Trailingstop:
-# Trades: 37
-Equity Final [$]: 1772753.13
-Return [%]: 1672.8
-Win Rate [%]: 29.7
-Best Trade [%]: 30030.2
+# Trades: 14
+Equity Final [$]: 188584.41
+Return [%]: 88.6
+Win Rate [%]: 42.9
+Best Trade [%]: 6623.9
 Worst Trade [%]: -2297.0
-Avg. Trade [%]: 821.5
-Sharpe Ratio: 0.78
+Avg. Trade [%]: 3.5
+Sharpe Ratio: 0.64
 
 TSLA_TwoStdDev_MonthlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 31103576.85
-Return [%]: 31003.6
+Equity Final [$]: 721989.75
+Return [%]: 622.0
 Win Rate [%]: 100.0
-Best Trade [%]: 3100357.7
-Worst Trade [%]: 3100357.7
-Avg. Trade [%]: 3100357.7
-Sharpe Ratio: 0.98
+Best Trade [%]: 62199.0
+Worst Trade [%]: 62199.0
+Avg. Trade [%]: 62199.0
+Sharpe Ratio: 1.12
 
 TSLA_TwoStdDev_YearlyTrend_LowerBand_Trailing:
 # Trades: 1
-Equity Final [$]: 24747624.29
-Return [%]: 24647.6
-Win Rate [%]: 100.0
-Best Trade [%]: 2464762.4
-Worst Trade [%]: 2464762.4
-Avg. Trade [%]: 2464762.4
-Sharpe Ratio: 0.97
+Equity Final [$]: 93090.40
+Return [%]: -6.9
+Win Rate [%]: 0.0
+Best Trade [%]: -691.0
+Worst Trade [%]: -691.0
+Avg. Trade [%]: -691.0
+Sharpe Ratio: 0.16
 
 TSLA_TwoStdDev_UpperBand_Trailing:
 # Trades: 1
-Equity Final [$]: 19288816.87
-Return [%]: 19188.8
-Win Rate [%]: 100.0
-Best Trade [%]: 1918881.7
-Worst Trade [%]: 1918881.7
-Avg. Trade [%]: 1918881.7
-Sharpe Ratio: 0.94
+Equity Final [$]: 81945.30
+Return [%]: -18.1
+Win Rate [%]: 0.0
+Best Trade [%]: -1805.5
+Worst Trade [%]: -1805.5
+Avg. Trade [%]: -1805.5
+Sharpe Ratio: 0.12
 
 TSLA_TwoStdDev_SMA_Trailing_Pyramid:
-# Trades: 117
-Equity Final [$]: 140641.80
-Return [%]: 40.6
-Win Rate [%]: 36.8
-Best Trade [%]: 3941.1
-Worst Trade [%]: -1927.0
-Avg. Trade [%]: 155.6
-Sharpe Ratio: 0.37
+# Trades: 30
+Equity Final [$]: 124187.81
+Return [%]: 24.2
+Win Rate [%]: 40.0
+Best Trade [%]: 3588.7
+Worst Trade [%]: -1571.8
+Avg. Trade [%]: 321.3
+Sharpe Ratio: 0.81
 
 TSLA_TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End:
-# Trades: 6
-Equity Final [$]: 2485377.01
-Return [%]: 2385.4
-Win Rate [%]: 66.7
-Best Trade [%]: 38750.4
-Worst Trade [%]: -3393.3
-Avg. Trade [%]: 10173.6
-Sharpe Ratio: 0.70
+# Trades: 2
+Equity Final [$]: 329585.03
+Return [%]: 229.6
+Win Rate [%]: 100.0
+Best Trade [%]: 13956.7
+Worst Trade [%]: 1163.8
+Avg. Trade [%]: 7560.2
+Sharpe Ratio: 0.83
 

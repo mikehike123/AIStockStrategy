@@ -2,7 +2,6 @@ import os
 import pandas as pd
 import sys
 sys.path.append('..')
-from report_generator import generate_report
 # Assuming your modified file is named custom_backtest_engine.py
 from custom_backtest_engine import (
     BacktestEngine, 
@@ -13,6 +12,7 @@ from custom_backtest_engine import (
     TwoStdDevStrategy
 )
 from backtester import generate_summary_from_trades
+from config import START_DATE, END_DATE
 
 # This list is now fully compatible with the modified engine
 STRATEGIES = [
@@ -157,8 +157,8 @@ def main():
                 ticker = filename.split('_')[0]
                 data = pd.read_csv(f'{data_dir}/{filename}', index_col='Date', parse_dates=True)
                 data.index = pd.to_datetime(data.index, utc=True).tz_localize(None)
-                start_date = pd.to_datetime('2000-01-01')
-                end_date = pd.to_datetime('2024-12-31')
+                start_date = START_DATE
+                end_date = END_DATE
                 data = data[(data.index >= start_date) & (data.index <= end_date)]
 
                 for strat_name, strat_class in STRATEGIES:
@@ -197,6 +197,7 @@ def main():
     summary_csv_path = os.path.join(os.path.dirname(__file__), 'backtest_summary.csv')
     summary_df.to_csv(summary_csv_path)
 
+    from report_generator import generate_report
     generate_report(results_path)
 
 if __name__ == '__main__':

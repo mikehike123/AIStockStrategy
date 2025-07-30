@@ -1,8 +1,8 @@
 # Portfolio Analysis Report
 
-**Analysis Date:** 2025-07-29
+**Analysis Date:** 2025-07-30
 
-**Data Span:** 2000-01-03 to 2024-12-30
+**Data Span:** 2020-01-02 to 2023-12-29
 
 **Initial Capital:** $100,000.00
 
@@ -12,16 +12,16 @@
 
 This report shows the performance of each strategy when applied across the entire portfolio of stocks.
 
-|                                            | Final Portfolio Value [$]   | Portfolio Return [%]   |   Max Drawdown [%] |
-|:-------------------------------------------|:----------------------------|:-----------------------|-------------------:|
-| Buy and Hold                               | 27,641,076.1                | 27,541.1               |              -59   |
-| TwoStdDev_MonthlyTrend_LowerBand_Trailing  | 27,726,163.1                | 27,626.2               |              -58   |
-| TwoStdDev_YearlyTrend_LowerBand_Trailing   | 23,837,930.3                | 23,737.9               |              -56.4 |
-| TwoStdDev_UpperBand_Trailing               | 21,189,411.0                | 21,089.4               |              -54.7 |
-| Breakout_Simple                            | 20,225,202.1                | 20,125.2               |              -56.1 |
-| BreakoutV2_As_Simple                       | 20,225,202.1                | 20,125.2               |              -56.1 |
-| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End | 12,148,221.8                | 12,048.2               |              -46.1 |
-| BreakoutV2_20_Trailingstop                 | 8,997,026.9                 | 8,897.0                |              -28   |
-| BreakoutV2_Full_Features                   | 859,670.2                   | 759.7                  |              -13.9 |
-| BreakoutV2_TrailingStop                    | 737,510.3                   | 637.5                  |              -23   |
-| TwoStdDev_SMA_Trailing_Pyramid             | 248,407.9                   | 148.4                  |               -7.4 |
+|                                            | Final Portfolio Value [$]   |   Portfolio Return [%] |   Max Drawdown [%] |
+|:-------------------------------------------|:----------------------------|-----------------------:|-------------------:|
+| Buy and Hold                               | 300,902.5                   |                  200.9 |              -57.2 |
+| TwoStdDev_MonthlyTrend_LowerBand_Trailing  | 280,328.5                   |                  180.3 |              -56.3 |
+| Breakout_Simple                            | 241,605.7                   |                  141.6 |              -52.7 |
+| BreakoutV2_As_Simple                       | 241,605.7                   |                  141.6 |              -52.7 |
+| BreakoutV2_20_Trailingstop                 | 200,934.8                   |                  100.9 |              -25.1 |
+| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End | 168,121.2                   |                   68.1 |              -48.2 |
+| BreakoutV2_Full_Features                   | 157,528.6                   |                   57.5 |              -10.1 |
+| BreakoutV2_TrailingStop                    | 146,261.1                   |                   46.3 |              -13.1 |
+| TwoStdDev_UpperBand_Trailing               | 121,518.0                   |                   21.5 |              -50.1 |
+| TwoStdDev_YearlyTrend_LowerBand_Trailing   | 120,156.5                   |                   20.2 |              -40.3 |
+| TwoStdDev_SMA_Trailing_Pyramid             | 113,790.9                   |                   13.8 |               -8.3 |

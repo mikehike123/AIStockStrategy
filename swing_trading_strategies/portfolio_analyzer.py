@@ -36,6 +36,7 @@ from datetime import date
 # Add the project root to the Python path to allow for absolute imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
+from swing_trading_strategies.config import START_DATE, END_DATE
 from swing_trading_strategies.custom_backtest_engine import BacktestEngine
 from swing_trading_strategies.main import STRATEGIES
 
@@ -55,8 +56,8 @@ def run_portfolio_analysis(initial_capital=100000):
     for filename in stock_files:
         data = pd.read_csv(os.path.join(data_dir, filename), index_col='Date', parse_dates=True)
         data.index = pd.to_datetime(data.index, utc=True).tz_localize(None)
-        start_date = pd.to_datetime('2000-01-01')
-        end_date = pd.to_datetime('2024-12-31')
+        start_date = START_DATE
+        end_date = END_DATE
         data = data[(data.index >= start_date) & (data.index <= end_date)]
         all_stock_data[filename] = data
         if common_index is None:

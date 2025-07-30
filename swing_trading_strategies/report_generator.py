@@ -1,4 +1,6 @@
 import pandas as pd
+from datetime import date
+from config import START_DATE, END_DATE
 
 def generate_report(results_file):
 
@@ -36,9 +38,7 @@ def generate_report(results_file):
                 for strat in zero_trade_strategies:
                     logf.write(f"  - {strat}\n")
 
-    # Replace any remaining NaN values with empty string (for display)
-    for col in df.columns:
-        df[col] = df[col].apply(lambda x: '' if pd.isna(x) else x)
+    
 
     # Now format columns for display (only for non-N/A values)
     money_cols = ['Equity Final [$]']
@@ -46,13 +46,13 @@ def generate_report(results_file):
     sharpe_cols = ['Sharpe Ratio']
     for col in money_cols:
         if col in df.columns:
-            df[col] = df[col].apply(lambda x: f'{float(x):.2f}' if x != 'N/A' else 'N/A')
+            df[col] = df[col].apply(lambda x: f'{float(x):.2f}' if not pd.isna(x) else 'N/A')
     for col in percent_cols:
         if col in df.columns:
-            df[col] = df[col].apply(lambda x: f'{float(x):.1f}' if x != 'N/A' else 'N/A')
+            df[col] = df[col].apply(lambda x: f'{float(x):.1f}' if not pd.isna(x) else 'N/A')
     for col in sharpe_cols:
         if col in df.columns:
-            df[col] = df[col].apply(lambda x: f'{float(x):.2f}' if x != 'N/A' else 'N/A')
+            df[col] = df[col].apply(lambda x: f'{float(x):.2f}' if not pd.isna(x) else 'N/A')
 
     # Sort by Sharpe Ratio (treat 'N/A' as 0 for sorting)
     def sharpe_sort(x):
@@ -68,8 +68,10 @@ def generate_report(results_file):
         df_sorted = df_sorted.drop(columns=['Sharpe Ratio Sort'])
     top_5_strategies = df_sorted.head(5)
 
-    report = """
-# Top 5 Swing Trading Strategies
+    report = """# Top 5 Swing Trading Strategies
+
+**Report Generated:** {report_date}  
+**Analysis Period:** {start_date} to {end_date}
 
 This report details the top 5 swing trading strategies based on backtesting results.
 
@@ -94,6 +96,9 @@ The winning strategy is **{winner}** with a Sharpe Ratio of {winner_sharpe}.
         winner_description = f"The winning strategy is {winner}. It is a {winner.split('_')[1]} strategy applied to {winner.split('_')[0]}."
 
         report = report.format(
+            report_date=date.today().strftime('%Y-%m-%d'),
+            start_date=START_DATE.strftime('%Y-%m-%d'),
+            end_date=END_DATE.strftime('%Y-%m-%d'),
             table=top_5_strategies.to_markdown(),
             winner=winner,
             winner_sharpe=winner_sharpe,
@@ -101,6 +106,9 @@ The winning strategy is **{winner}** with a Sharpe Ratio of {winner_sharpe}.
         )
     else:
         report = report.format(
+            report_date=date.today().strftime('%Y-%m-%d'),
+            start_date=START_DATE.strftime('%Y-%m-%d'),
+            end_date=END_DATE.strftime('%Y-%m-%d'),
             table="No strategies to display.",
             winner="N/A",
             winner_sharpe="N/A",
