@@ -1,8 +1,8 @@
 # Portfolio Analysis Report
 
-**Analysis Date:** 2025-07-30
+**Analysis Date:** 2025-08-06
 
-**Data Span:** 2020-01-02 to 2023-12-29
+**Data Span:** 2000-01-03 to 2023-12-29
 
 **Initial Capital:** $100,000.00
 
@@ -12,17 +12,19 @@
 
 This report shows the performance of each strategy when applied across the entire portfolio of stocks.
 
-|                                            | Final Portfolio Value [$]   |   Portfolio Return [%] |   Max Drawdown [%] |
-|:-------------------------------------------|:----------------------------|-----------------------:|-------------------:|
-| Buy and Hold                               | 300,902.5                   |                  200.9 |              -57.2 |
-| TwoStdDev_MonthlyTrend_LowerBand_Trailing  | 280,328.5                   |                  180.3 |              -56.3 |
-| BreakoutV2_As_Simple                       | 241,605.7                   |                  141.6 |              -52.7 |
-| Breakout_Simple                            | 241,605.7                   |                  141.6 |              -52.7 |
-| BreakoutV2_20_Trailingstop                 | 205,578.2                   |                  105.6 |              -39.5 |
-| BreakoutV2_20_Trailingstop_Pyramid         | 200,934.8                   |                  100.9 |              -25.1 |
-| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End | 168,121.2                   |                   68.1 |              -48.2 |
-| BreakoutV2_Full_Features                   | 157,528.6                   |                   57.5 |              -10.1 |
-| BreakoutV2_TrailingStop                    | 146,261.1                   |                   46.3 |              -13.1 |
-| TwoStdDev_UpperBand_Trailing               | 121,518.0                   |                   21.5 |              -50.1 |
-| TwoStdDev_YearlyTrend_LowerBand_Trailing   | 120,156.5                   |                   20.2 |              -40.3 |
-| TwoStdDev_SMA_Trailing_Pyramid             | 113,790.9                   |                   13.8 |               -8.3 |
+|                                                           | Final Portfolio Value [$]   | Portfolio Return [%]   |   Max Drawdown [%] |
+|:----------------------------------------------------------|:----------------------------|:-----------------------|-------------------:|
+| Buy and Hold                                              | 13,603,969.9                | 13,504.0               |              -59   |
+| TwoStdDev_YearlyTrend_LowerBand_Trailing                  | 15,193,186.5                | 15,093.2               |              -55.8 |
+| TwoStdDev_YearlyTrend_SMABand_Trailing                    | 14,322,252.3                | 14,222.3               |              -56.4 |
+| TwoStdDev_MonthlyTrend_LowerBand_Trailing                 | 13,812,715.8                | 13,712.7               |              -58   |
+| TwoStdDev_UpperBand_Trailing                              | 13,252,556.9                | 13,152.6               |              -54.7 |
+| BreakoutV2_20_Trailingstop                                | 12,019,393.8                | 11,919.4               |              -48.4 |
+| TwoStdDev_MonthlyTrend_LowerBand_Trailing_pyramiding50g_4 | 11,059,950.5                | 10,960.0               |              -55.3 |
+| Breakout_Simple                                           | 10,909,131.7                | 10,809.1               |              -56.1 |
+| BreakoutV2_As_Simple                                      | 10,909,131.7                | 10,809.1               |              -56.1 |
+| BreakoutV2_25_NoStop_Pyramid                              | 9,867,062.3                 | 9,767.1                |              -55.6 |
+| TwoStdDev_SMA_Trailing_Pyramid_Hold_To_End                | 7,662,591.2                 | 7,562.6                |              -46.1 |
+| BreakoutV2_Full_Features                                  | 631,347.3                   | 531.3                  |              -13.9 |
+| BreakoutV2_TrailingStop                                   | 613,750.1                   | 513.8                  |              -23   |
+| TwoStdDev_SMA_Trailing_Pyramid                            | 237,189.6                   | 137.2                  |               -7.4 |

@@ -1,48 +1,80 @@
-# This script performs a portfolio-level backtest analysis.
-# It evaluates each strategy defined in `main.py` across all stock data files.
-#
-# How Different Date Spans Are Handled:
-# 1.  Create a Universal Timeline: Before running any backtests, the script first
-#     loops through every stock data file to create a single, "master" date index.
-#     This master index contains every unique trading day from the earliest start
-#     date to the latest end date across all files.
-#
-# 2.  Run Backtests Individually: The backtest for a given strategy is run on each
-#     stock one by one. The result of each backtest is an equity curve that only
-#     has dates corresponding to that specific stock's data.
-#
-# 3.  Align to the Universal Timeline: After generating an equity curve for a single
-#     stock, it is re-indexed to align with the master timeline from Step 1. This
-#     expands the individual equity curve so that it has a value for every single
-#     day in the universal timeline.
-#
-# 4.  Fill in the Gaps (Forward-Filling): Re-indexing creates gaps (NaN values) for
-#     dates where a specific stock didn't have data. These are handled by "forward-filling":
-#     - Before a stock's first trading day, its value is held constant at its
-#       initial allocated capital.
-#     - If a stock stops trading before others, its last known equity value is
-#       carried forward to the end of the analysis period.
-#
-# 5.  Sum the Aligned Curves: Once every stock's equity curve is aligned to the same
-#     universal timeline, the script sums the equity values for each day across all
-#     stocks. This produces the total portfolio value for every day of the entire
-#     period, allowing for an accurate final return calculation.
-
 import os
 import pandas as pd
 import sys
 from datetime import date
+import matplotlib.pyplot as plt
 
 # Add the project root to the Python path to allow for absolute imports
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-from swing_trading_strategies.config import START_DATE, END_DATE
+# --- Import the new flag from your config file ---
+from swing_trading_strategies.config import START_DATE, END_DATE, Use_Log_Plots_Portfolio
 from swing_trading_strategies.custom_backtest_engine import BacktestEngine
 from swing_trading_strategies.main import STRATEGIES
+
+def plot_portfolio_equity(portfolio_equity, strat_name, strat_params, plots_dir, initial_capital, buy_and_hold_equity=None):
+    """
+    Generates and saves a plot of the portfolio equity curve.
+    Includes the Buy and Hold curve as a benchmark for comparison.
+    """
+    plt.style.use('seaborn-v0_8-darkgrid')
+    fig, ax = plt.subplots(figsize=(15, 8))
+
+    # Plot the primary strategy curve
+    ax.plot(portfolio_equity.index, portfolio_equity.values, label=f'{strat_name} Equity', color='royalblue', linewidth=2, zorder=10)
+
+    # --- New: Plot Buy and Hold on the same chart if provided ---
+    if buy_and_hold_equity is not None:
+        ax.plot(buy_and_hold_equity.index, buy_and_hold_equity.values, label='Buy and Hold Equity', color='gray', linestyle='-', linewidth=1.5, alpha=0.9, zorder=5)
+
+    # Add a horizontal line for the initial capital
+    ax.axhline(y=initial_capital, color='red', linestyle='--', linewidth=1.5, label=f'Initial Capital (${initial_capital:,.0f})')
+
+    # Logic to switch between Linear and Log scale
+    if Use_Log_Plots_Portfolio:
+        ax.set_yscale('log')
+        ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
+        ax.set_ylabel('Portfolio Value ($) - Log Scale')
+    else:
+        ax.yaxis.set_major_formatter(plt.FuncFormatter(lambda x, p: f'${x:,.0f}'))
+        ax.set_ylabel('Portfolio Value ($)')
+
+
+    fig.suptitle(f'Portfolio Equity: {strat_name}', fontsize=16, fontweight='bold')
+    
+    param_list = [f'{k}={v}' for k, v in strat_params.items() if not k.startswith('_')]
+    if param_list:
+        midpoint = len(param_list) // 2 + (len(param_list) % 2)
+        line1 = ', '.join(param_list[:midpoint])
+        line2 = ', '.join(param_list[midpoint:])
+        param_str = f"Parameters: {line1}"
+        if line2:
+            param_str += f"\n{line2}"
+        ax.set_title(param_str, fontsize=10)
+
+    ax.set_xlabel('Date', fontsize=12)
+    ax.legend(loc='upper left')
+    ax.minorticks_on()
+    ax.grid(which='major', linestyle='-', linewidth='0.5', color='gray')
+    ax.grid(which='minor', linestyle=':', linewidth='0.5', color='lightgray')
+    
+    safe_strat_name = strat_name.replace(" ", "_").replace("/", "_")
+    plot_filename = os.path.join(plots_dir, f'portfolio_{safe_strat_name}.png')
+    
+    fig.tight_layout(rect=[0, 0.03, 1, 0.95])
+    
+    plt.savefig(plot_filename, dpi=150)
+    plt.close(fig)
+    print(f"Saved plot for {strat_name} to {plot_filename}")
+
 
 def run_portfolio_analysis(initial_capital=100000):
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
     data_dir = os.path.join(project_root, 'stockData')
+    
+    plots_dir = os.path.join(os.path.dirname(__file__), 'plots', 'portfolios')
+    os.makedirs(plots_dir, exist_ok=True)
+    
     stock_files = [f for f in os.listdir(data_dir) if f.endswith('.csv')]
     stock_symbols = [f.split('_')[0] for f in stock_files]
     num_stocks = len(stock_files)
@@ -50,7 +82,6 @@ def run_portfolio_analysis(initial_capital=100000):
 
     portfolio_results = {}
 
-    # Determine a common date index from all datasets first
     common_index = None
     all_stock_data = {}
     for filename in stock_files:
@@ -69,6 +100,7 @@ def run_portfolio_analysis(initial_capital=100000):
     analysis_end_date = common_index.max().strftime('%Y-%m-%d')
 
     # --- Buy and Hold Calculation ---
+    buy_and_hold_portfolio_equity = None # Initialize
     buy_and_hold_curves = []
     for filename, data in all_stock_data.items():
         initial_price = data['Close'].iloc[0]
@@ -78,12 +110,23 @@ def run_portfolio_analysis(initial_capital=100000):
         buy_and_hold_curves.append(reindexed_curve)
     
     if buy_and_hold_curves:
-        portfolio_equity = pd.concat(buy_and_hold_curves, axis=1).sum(axis=1)
-        initial_portfolio_value = portfolio_equity.iloc[0]
-        final_portfolio_value = portfolio_equity.iloc[-1]
+        buy_and_hold_portfolio_equity = pd.concat(buy_and_hold_curves, axis=1).sum(axis=1)
+        
+        # Plot Buy and Hold on its own (no comparison line needed)
+        plot_portfolio_equity(
+            portfolio_equity=buy_and_hold_portfolio_equity, 
+            strat_name='Buy and Hold', 
+            strat_params={}, 
+            plots_dir=plots_dir, 
+            initial_capital=initial_capital,
+            buy_and_hold_equity=None # Explicitly set to None
+        )
+
+        initial_portfolio_value = buy_and_hold_portfolio_equity.iloc[0]
+        final_portfolio_value = buy_and_hold_portfolio_equity.iloc[-1]
         portfolio_return_pct = (final_portfolio_value - initial_portfolio_value) / initial_portfolio_value * 100
-        running_max = portfolio_equity.cummax()
-        drawdown = (portfolio_equity - running_max) / running_max
+        running_max = buy_and_hold_portfolio_equity.cummax()
+        drawdown = (buy_and_hold_portfolio_equity - running_max) / running_max
         max_drawdown_pct = drawdown.min() * 100
 
         portfolio_results['Buy and Hold'] = {
@@ -95,29 +138,37 @@ def run_portfolio_analysis(initial_capital=100000):
     for strat_name, strat_class_lambda in STRATEGIES:
         print(f"Analyzing portfolio for strategy: {strat_name}...")
         all_equity_curves = []
+        
+        temp_strat_instance = strat_class_lambda()
+        strat_params = temp_strat_instance.__dict__
 
         for filename, data in all_stock_data.items():
             strategy_instance = strat_class_lambda()
             engine = BacktestEngine(data, strategy_instance, initial_cash=capital_per_stock)
             _, equity_curve_raw = engine.run()
 
-            # Align the equity curve (N+1 points) with the data index (N points)
             equity_curve = pd.Series(equity_curve_raw.values[1:], index=data.index)
-
-            # Reindex the equity curve to the common index
+            
             reindexed_curve = equity_curve.reindex(common_index, method='ffill').fillna(capital_per_stock)
             all_equity_curves.append(reindexed_curve)
 
-        # Combine equity curves
         if all_equity_curves:
             portfolio_equity = pd.concat(all_equity_curves, axis=1).sum(axis=1)
             
-            # --- CALCULATE METRICS ---
+            # --- Updated call: Pass the B&H data for comparison ---
+            plot_portfolio_equity(
+                portfolio_equity=portfolio_equity, 
+                strat_name=strat_name, 
+                strat_params=strat_params, 
+                plots_dir=plots_dir, 
+                initial_capital=initial_capital,
+                buy_and_hold_equity=buy_and_hold_portfolio_equity
+            )
+
             initial_portfolio_value = portfolio_equity.iloc[0]
             final_portfolio_value = portfolio_equity.iloc[-1]
             portfolio_return_pct = (final_portfolio_value - initial_portfolio_value) / initial_portfolio_value * 100
 
-            # Calculate Max Drawdown
             running_max = portfolio_equity.cummax()
             drawdown = (portfolio_equity - running_max) / running_max
             max_drawdown_pct = drawdown.min() * 100
@@ -137,7 +188,7 @@ def run_portfolio_analysis(initial_capital=100000):
     # --- Generate and Save Report ---
     print("\n--- Portfolio Analysis Results ---")
     results_df = pd.DataFrame.from_dict(portfolio_results, orient='index')
-    # Custom sort: Buy and Hold first, then by return
+
     if 'Buy and Hold' in results_df.index:
         buy_and_hold_row = results_df.loc[['Buy and Hold']]
         other_strategies = results_df.drop('Buy and Hold').sort_values(by='Portfolio Return [%]', ascending=False)
@@ -151,10 +202,8 @@ def run_portfolio_analysis(initial_capital=100000):
 
     report_content = results_df.to_markdown()
 
-    # Print to console
     print(report_content)
 
-    # Save to file
     report_path = os.path.join(os.path.dirname(__file__), 'portfolio_report.md')
     today_str = date.today().strftime('%Y-%m-%d')
 
